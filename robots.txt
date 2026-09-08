@@ -1,0 +1,5 @@
+User-agent: *
+Allow: /
+
+# Після покупки домену замініть адресу нижче на справжню
+Sitemap: https://ЗАМІНІТЬ-ДОМЕН.com.ua/sitemap.xml

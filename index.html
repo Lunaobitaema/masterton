@@ -2,412 +2,412 @@
 <html lang="uk">
 <head>
 <meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>GlassGuard — Захист та стиль для ваших вікон</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<!-- ===== SEO: те, що бачить Google і що показується у вкладці браузера ===== -->
+<title>Бронеплівка на вікна Київ — монтаж з гарантією | GlassGuard</title>
+<meta name="description" content="Поклейка бронеплівки на вікна в Києві та області. Понад 3000 виконаних об'єктів, 95% робіт — захисні плівки. Безкоштовний виїзд на заміри, монтаж зі зняттям штапиків.">
+<link rel="canonical" href="https://ЗАМІНІТЬ-ДОМЕН.com.ua/">
+
+<!-- як виглядатиме посилання, коли ним поділяться у Telegram/Viber/Facebook -->
+<meta property="og:type" content="website">
+<meta property="og:locale" content="uk_UA">
+<meta property="og:site_name" content="GlassGuard">
+<meta property="og:title" content="Бронеплівка на вікна в Києві — GlassGuard">
+<meta property="og:description" content="Понад 3000 виконаних об'єктів. Захисні, тонувальні та декоративні плівки. Безкоштовний виїзд на заміри.">
+<meta property="og:image" content="https://ЗАМІНІТЬ-ДОМЕН.com.ua/assets/og-cover.jpg">
+<meta name="theme-color" content="#0a0a0f">
+
+<link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Montserrat:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-<style>
-:root{--bg-deep:#0a0a0f;--bg-card:#12121a;--bg-surface:#1a1a25;--accent:#00d4ff;--accent-glow:rgba(0,212,255,0.15);--accent2:#ff6b35;--accent3:#7b68ee;--text:#e8e8f0;--text-dim:#8888a0;--glass-border:rgba(255,255,255,0.08);--success:#00e676;--danger:#ff4757;}
-*{margin:0;padding:0;box-sizing:border-box;}html{scroll-behavior:smooth;}
-body{font-family:'Montserrat',sans-serif;background:var(--bg-deep);color:var(--text);overflow-x:hidden;}
-body::before{content:'';position:fixed;inset:0;background-image:url("data:image/svg+xml,%3Csvg viewBox='0 0 256 256' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)' opacity='0.03'/%3E%3C/svg%3E");pointer-events:none;z-index:0;}
-.page{display:none;min-height:100vh;position:relative;z-index:1;}.page.active{display:block;}
+<link rel="stylesheet" href="assets/style.css">
 
-/* NAV */
-nav{position:fixed;top:0;left:0;right:0;z-index:1000;padding:16px 40px;display:flex;justify-content:space-between;align-items:center;background:rgba(10,10,15,0.85);backdrop-filter:blur(20px);border-bottom:1px solid var(--glass-border);transition:all .3s;}
-nav.scrolled{padding:10px 40px;background:rgba(10,10,15,0.95);}
-.logo{display:flex;align-items:center;gap:12px;cursor:pointer;text-decoration:none;}
-.logo-icon{width:44px;height:44px;}.logo-icon svg{width:100%;height:100%;}
-.logo-text{font-family:'Bebas Neue',sans-serif;font-size:28px;letter-spacing:3px;background:linear-gradient(135deg,var(--accent),#fff);-webkit-background-clip:text;-webkit-text-fill-color:transparent;}
-.nav-links{display:flex;gap:32px;align-items:center;}
-.nav-links a{color:var(--text-dim);text-decoration:none;font-size:13px;font-weight:500;letter-spacing:1.5px;text-transform:uppercase;transition:color .3s;cursor:pointer;}
-.nav-links a:hover,.nav-links a.active{color:var(--accent);}
-.nav-links .admin-btn{padding:8px 20px;border:1px solid var(--accent);border-radius:4px;color:var(--accent);transition:all .3s;}
-.nav-links .admin-btn:hover{background:var(--accent);color:var(--bg-deep);}
-.burger{display:none;flex-direction:column;gap:5px;cursor:pointer;padding:8px;z-index:1001;background:none;border:none;}
-.burger span{display:block;width:26px;height:2px;background:var(--text);border-radius:2px;transition:all .35s cubic-bezier(.25,.46,.45,.94);transform-origin:center;}
-.burger.open span:nth-child(1){transform:translateY(7px) rotate(45deg);}.burger.open span:nth-child(2){opacity:0;transform:scaleX(0);}.burger.open span:nth-child(3){transform:translateY(-7px) rotate(-45deg);}
-.mobile-menu{display:none;position:fixed;inset:0;background:rgba(10,10,15,0.97);backdrop-filter:blur(30px);z-index:999;flex-direction:column;justify-content:center;align-items:center;gap:8px;opacity:0;transition:opacity .35s;}
-.mobile-menu.open{display:flex;opacity:1;}
-.mobile-menu a{color:var(--text-dim);text-decoration:none;font-family:'Bebas Neue',sans-serif;font-size:36px;letter-spacing:4px;padding:14px 20px;transition:color .3s;cursor:pointer;}
-.mobile-menu a:active{color:var(--accent);}
-.mobile-menu .mm-admin{margin-top:20px;font-family:'Montserrat',sans-serif;font-size:14px;letter-spacing:2px;text-transform:uppercase;padding:12px 32px;border:1px solid var(--accent);border-radius:6px;color:var(--accent);}
-
-/* HERO */
-.hero{height:100vh;display:flex;flex-direction:column;justify-content:center;align-items:center;text-align:center;padding:0 20px;position:relative;overflow:hidden;}
-.hero-bg{position:absolute;inset:0;background:radial-gradient(ellipse at 50% 30%,rgba(0,212,255,0.06) 0%,transparent 60%),radial-gradient(ellipse at 80% 70%,rgba(123,104,238,0.04) 0%,transparent 50%);}
-.hero h1{font-family:'Bebas Neue',sans-serif;font-size:clamp(48px,8vw,100px);letter-spacing:6px;line-height:1;margin-bottom:20px;}
-.hero h1 span{color:var(--accent);}
-.hero p{font-size:18px;color:var(--text-dim);max-width:600px;font-weight:300;margin-bottom:50px;line-height:1.7;}
-.scroll-indicator{position:absolute;bottom:40px;display:flex;flex-direction:column;align-items:center;gap:8px;color:var(--text-dim);font-size:11px;letter-spacing:2px;text-transform:uppercase;animation:float 2s ease-in-out infinite;}
-@keyframes float{0%,100%{transform:translateY(0);}50%{transform:translateY(8px);}}
-
-/* SECTIONS */
-.section-wrap{padding:80px 40px;max-width:1400px;margin:0 auto;}
-.section-label{font-size:12px;letter-spacing:4px;text-transform:uppercase;color:var(--accent);text-align:center;margin-bottom:12px;}
-.section-title{font-family:'Bebas Neue',sans-serif;font-size:clamp(36px,5vw,56px);text-align:center;letter-spacing:3px;margin-bottom:60px;}
-
-/* WINDOWS */
-.windows-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:30px;}
-.window-card{position:relative;height:500px;border-radius:16px;overflow:hidden;cursor:pointer;border:1px solid var(--glass-border);transition:transform .4s cubic-bezier(.25,.46,.45,.94),border-color .4s;}
-.window-card:hover{transform:translateY(-8px);border-color:rgba(255,255,255,0.15);}
-.window-frame{position:absolute;inset:0;display:flex;flex-direction:column;justify-content:flex-end;padding:30px;z-index:2;}
-.glass-pane{position:absolute;inset:0;background:linear-gradient(180deg,rgba(200,220,240,0.08) 0%,rgba(100,140,180,0.03) 100%);transition:all .6s cubic-bezier(.25,.46,.45,.94);}
-.glass-pane::before{content:'';position:absolute;top:-50%;left:-50%;width:200%;height:200%;background:linear-gradient(135deg,transparent 40%,rgba(255,255,255,0.03) 50%,transparent 60%);transition:all .6s;}
-.card-tint .glass-pane{background:linear-gradient(180deg,rgba(30,50,80,0.1) 0%,rgba(10,20,40,0.05) 100%);}
-.card-tint:hover .glass-pane{background:rgba(5,10,20,0.75);}
-.card-tint .card-icon{color:var(--accent);}
-.card-armor .crack-overlay{position:absolute;inset:0;opacity:0;transition:opacity .5s;z-index:1;}
-.card-armor:hover .crack-overlay{opacity:1;}.card-armor .card-icon{color:var(--accent2);}
-.card-decor .stripe-overlay{position:absolute;inset:0;opacity:0;transition:opacity .6s;z-index:1;background:repeating-linear-gradient(90deg,transparent 0px,transparent 18px,rgba(123,104,238,0.12) 18px,rgba(123,104,238,0.12) 22px);}
-.card-decor:hover .stripe-overlay{opacity:1;}.card-decor .card-icon{color:var(--accent3);}
-.card-content{position:relative;z-index:3;}
-.card-icon{font-size:40px;margin-bottom:16px;display:block;}
-.card-title{font-family:'Bebas Neue',sans-serif;font-size:32px;letter-spacing:2px;margin-bottom:8px;}
-.card-subtitle{font-size:13px;color:var(--text-dim);font-weight:300;line-height:1.6;}
-.card-arrow{position:absolute;top:24px;right:24px;width:40px;height:40px;border-radius:50%;border:1px solid rgba(255,255,255,0.15);display:flex;align-items:center;justify-content:center;color:var(--text-dim);font-size:18px;transition:all .3s;z-index:3;}
-.window-card:hover .card-arrow{border-color:var(--accent);color:var(--accent);transform:rotate(-45deg);}
-
-/* STATS */
-.stats-bar{display:grid;grid-template-columns:repeat(4,1fr);gap:24px;padding:0 40px 80px;max-width:1400px;margin:0 auto;}
-.stat-item{text-align:center;padding:32px 16px;background:var(--bg-card);border:1px solid var(--glass-border);border-radius:14px;transition:border-color .3s;}
-.stat-item:hover{border-color:rgba(255,255,255,0.12);}
-.stat-num{font-family:'Bebas Neue',sans-serif;font-size:48px;letter-spacing:2px;color:var(--accent);line-height:1;margin-bottom:8px;}
-.stat-label{font-size:12px;color:var(--text-dim);letter-spacing:1px;text-transform:uppercase;font-weight:500;}
-
-/* STEPS */
-.steps-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:24px;}
-.step-card{background:var(--bg-card);border:1px solid var(--glass-border);border-radius:14px;padding:32px 24px;text-align:center;transition:border-color .3s;}
-.step-card:hover{border-color:rgba(255,255,255,0.12);}
-.step-num{font-family:'Bebas Neue',sans-serif;font-size:56px;color:rgba(0,212,255,0.1);line-height:1;margin-bottom:8px;}
-.step-icon{font-size:28px;margin-bottom:12px;display:block;}
-.step-title{font-family:'Bebas Neue',sans-serif;font-size:20px;letter-spacing:1.5px;margin-bottom:10px;}
-.step-text{font-size:13px;color:var(--text-dim);line-height:1.7;font-weight:300;}
-
-/* ABOUT */
-.about-grid{display:grid;grid-template-columns:1fr 1fr;gap:40px;align-items:center;}
-.about-text p{color:var(--text-dim);font-size:15px;line-height:1.8;font-weight:300;margin-bottom:16px;}
-.about-visual{display:grid;grid-template-columns:1fr 1fr;gap:16px;}
-.about-box{background:var(--bg-card);border:1px solid var(--glass-border);border-radius:12px;padding:24px;text-align:center;transition:border-color .3s;}
-.about-box:hover{border-color:rgba(255,255,255,0.12);}
-.about-box-icon{font-size:28px;margin-bottom:10px;display:block;}
-.about-box-title{font-family:'Bebas Neue',sans-serif;font-size:16px;letter-spacing:1px;margin-bottom:6px;}
-.about-box-text{font-size:11px;color:var(--text-dim);line-height:1.5;}
-
-/* REVIEWS */
-.reviews-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:24px;}
-.review-card{background:var(--bg-card);border:1px solid var(--glass-border);border-radius:14px;padding:32px;transition:border-color .3s;}
-.review-card:hover{border-color:rgba(255,255,255,0.12);}
-.review-stars{color:#ffd700;font-size:14px;margin-bottom:14px;letter-spacing:2px;}
-.review-text{font-size:14px;color:var(--text-dim);line-height:1.8;font-weight:300;font-style:italic;margin-bottom:20px;}
-.review-author{display:flex;align-items:center;gap:12px;}
-.review-avatar{width:40px;height:40px;border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:16px;font-weight:700;color:var(--bg-deep);}
-.review-name{font-size:14px;font-weight:600;}
-.review-meta{font-size:11px;color:var(--text-dim);}
-
-/* FAQ */
-.faq-list{max-width:800px;margin:0 auto;}
-.faq-item{border:1px solid var(--glass-border);border-radius:12px;margin-bottom:12px;overflow:hidden;transition:border-color .3s;}
-.faq-item:hover{border-color:rgba(255,255,255,0.12);}
-.faq-q{padding:20px 24px;cursor:pointer;display:flex;justify-content:space-between;align-items:center;font-size:15px;font-weight:500;transition:background .3s;background:var(--bg-card);}
-.faq-q:hover{background:var(--bg-surface);}
-.faq-toggle{font-size:20px;color:var(--accent);transition:transform .3s;flex-shrink:0;margin-left:16px;}
-.faq-item.open .faq-toggle{transform:rotate(45deg);}
-.faq-a{max-height:0;overflow:hidden;transition:max-height .4s cubic-bezier(.25,.46,.45,.94),padding .3s;padding:0 24px;background:var(--bg-card);}
-.faq-item.open .faq-a{max-height:300px;padding:0 24px 20px;}
-.faq-a p{font-size:14px;color:var(--text-dim);line-height:1.8;font-weight:300;}
-
-/* CONTACTS */
-.contact-section{background:var(--bg-card);border-top:1px solid var(--glass-border);border-bottom:1px solid var(--glass-border);}
-.contact-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:30px;}
-.contact-item{text-align:center;padding:20px;}
-.contact-item-icon{font-size:28px;margin-bottom:12px;display:block;}
-.contact-item-label{font-size:11px;letter-spacing:2px;text-transform:uppercase;color:var(--text-dim);margin-bottom:8px;}
-.contact-item-value{font-size:16px;font-weight:500;}.contact-item-value a{color:var(--accent);text-decoration:none;}
-
-/* FLOAT */
-.float-btn{position:fixed;bottom:28px;right:28px;z-index:998;display:flex;flex-direction:column;gap:10px;align-items:flex-end;}
-.float-main{width:56px;height:56px;border-radius:50%;background:linear-gradient(135deg,var(--accent),var(--accent3));border:none;cursor:pointer;display:flex;align-items:center;justify-content:center;font-size:24px;color:#fff;box-shadow:0 4px 20px rgba(0,212,255,0.3);transition:transform .3s,box-shadow .3s;}
-.float-main:hover{transform:scale(1.1);box-shadow:0 6px 30px rgba(0,212,255,0.4);}
-.float-main.open{transform:rotate(45deg);}
-.float-options{display:flex;flex-direction:column;gap:8px;align-items:flex-end;opacity:0;transform:translateY(10px);pointer-events:none;transition:all .3s;}
-.float-options.open{opacity:1;transform:translateY(0);pointer-events:all;}
-.float-opt{display:flex;align-items:center;gap:10px;text-decoration:none;}
-.float-opt-label{background:var(--bg-card);border:1px solid var(--glass-border);padding:6px 14px;border-radius:8px;font-size:12px;color:var(--text);white-space:nowrap;}
-.float-opt-icon{width:44px;height:44px;border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:18px;color:#fff;flex-shrink:0;transition:transform .2s;}
-.float-opt-icon:hover{transform:scale(1.1);}
-.float-opt-icon.viber{background:#7360f2;}.float-opt-icon.telegram{background:#26a5e4;}.float-opt-icon.phone{background:var(--success);}
-
-/* CATEGORY */
-.category-page{padding-top:100px;}
-.category-hero{padding:60px 40px 40px;max-width:1200px;margin:0 auto;}
-.back-btn{display:inline-flex;align-items:center;gap:8px;color:var(--text-dim);font-size:13px;cursor:pointer;margin-bottom:30px;transition:color .3s;letter-spacing:1px;text-transform:uppercase;}.back-btn:hover{color:var(--accent);}
-.category-badge{display:inline-block;padding:6px 16px;border-radius:20px;font-size:11px;letter-spacing:2px;text-transform:uppercase;margin-bottom:16px;font-weight:600;}
-.badge-tint{background:rgba(0,212,255,0.12);color:var(--accent);}.badge-armor{background:rgba(255,107,53,0.12);color:var(--accent2);}.badge-decor{background:rgba(123,104,238,0.12);color:var(--accent3);}
-.category-title{font-family:'Bebas Neue',sans-serif;font-size:clamp(40px,6vw,72px);letter-spacing:4px;margin-bottom:20px;line-height:1;}
-.category-grid{display:grid;grid-template-columns:1fr 1fr;gap:30px;max-width:1200px;margin:0 auto;padding:0 40px 80px;}
-.info-card{background:var(--bg-card);border:1px solid var(--glass-border);border-radius:16px;padding:40px;transition:border-color .3s;}.info-card:hover{border-color:rgba(255,255,255,0.12);}
-.info-card h3{font-family:'Bebas Neue',sans-serif;font-size:24px;letter-spacing:2px;margin-bottom:20px;display:flex;align-items:center;gap:12px;}
-.info-card p,.info-card li{color:var(--text-dim);font-size:14px;line-height:1.8;font-weight:300;}
-.info-card ul{list-style:none;padding:0;}.info-card ul li{padding:8px 0;border-bottom:1px solid rgba(255,255,255,0.04);display:flex;align-items:center;gap:10px;}.info-card ul li:last-child{border-bottom:none;}.info-card ul li::before{content:'✓';color:var(--success);font-weight:700;}
-.price-tag{font-family:'Bebas Neue',sans-serif;font-size:48px;color:var(--accent);letter-spacing:2px;}
-.price-unit{font-size:14px;color:var(--text-dim);font-weight:300;}
-.form-card{grid-column:1/-1;background:var(--bg-card);border:1px solid var(--glass-border);border-radius:16px;padding:40px;}
-.form-card h3{font-family:'Bebas Neue',sans-serif;font-size:28px;letter-spacing:2px;margin-bottom:24px;}
-.form-row{display:grid;grid-template-columns:1fr 1fr;gap:16px;margin-bottom:16px;}
-.form-group{display:flex;flex-direction:column;gap:6px;}.form-group.full{grid-column:1/-1;}
-.form-group label{font-size:11px;letter-spacing:1.5px;text-transform:uppercase;color:var(--text-dim);}
-.form-group input,.form-group textarea,.form-group select{background:var(--bg-surface);border:1px solid var(--glass-border);border-radius:8px;padding:14px 16px;color:var(--text);font-family:'Montserrat',sans-serif;font-size:14px;transition:border-color .3s;outline:none;}
-.form-group input:focus,.form-group textarea:focus,.form-group select:focus{border-color:var(--accent);}
-.form-group textarea{resize:vertical;min-height:100px;}
-.submit-btn{padding:16px 40px;background:var(--accent);color:var(--bg-deep);border:none;border-radius:8px;font-family:'Bebas Neue',sans-serif;font-size:18px;letter-spacing:2px;cursor:pointer;transition:all .3s;margin-top:8px;}.submit-btn:hover{background:#fff;transform:translateY(-2px);box-shadow:0 8px 30px rgba(0,212,255,0.2);}
-
-/* ADMIN */
-.admin-page{padding-top:100px;}
-.admin-container{max-width:1200px;margin:0 auto;padding:40px;}
-.admin-header{display:flex;justify-content:space-between;align-items:center;margin-bottom:40px;}
-.admin-header h1{font-family:'Bebas Neue',sans-serif;font-size:42px;letter-spacing:3px;}
-.admin-tabs{display:flex;gap:4px;background:var(--bg-card);border-radius:10px;padding:4px;border:1px solid var(--glass-border);margin-bottom:30px;flex-wrap:wrap;}
-.admin-tab{padding:11px 18px;border-radius:8px;border:none;background:transparent;color:var(--text-dim);font-family:'Montserrat',sans-serif;font-size:12px;font-weight:500;cursor:pointer;transition:all .3s;letter-spacing:.5px;}
-.admin-tab.active{background:var(--accent);color:var(--bg-deep);}
-.admin-panel{display:none;}.admin-panel.active{display:block;}
-.admin-card{background:var(--bg-card);border:1px solid var(--glass-border);border-radius:16px;padding:32px;margin-bottom:24px;}
-.admin-card h3{font-family:'Bebas Neue',sans-serif;font-size:22px;letter-spacing:2px;margin-bottom:20px;color:var(--accent);}
-.admin-row{display:grid;grid-template-columns:1fr 1fr;gap:16px;margin-bottom:16px;}
-.admin-field{display:flex;flex-direction:column;gap:6px;}.admin-field.full{grid-column:1/-1;}
-.admin-field label{font-size:11px;letter-spacing:1.5px;text-transform:uppercase;color:var(--text-dim);}
-.admin-field input,.admin-field textarea,.admin-field select{background:var(--bg-surface);border:1px solid var(--glass-border);border-radius:8px;padding:12px 14px;color:var(--text);font-family:'Montserrat',sans-serif;font-size:14px;outline:none;transition:border-color .3s;}
-.admin-field input:focus,.admin-field textarea:focus{border-color:var(--accent);}
-.admin-field textarea{resize:vertical;min-height:80px;}
-.save-btn{padding:14px 32px;background:var(--accent);color:var(--bg-deep);border:none;border-radius:8px;font-family:'Bebas Neue',sans-serif;font-size:16px;letter-spacing:2px;cursor:pointer;transition:all .3s;}.save-btn:hover{background:#fff;}
-.save-msg{display:inline-block;margin-left:16px;color:var(--success);font-size:13px;opacity:0;transition:opacity .3s;}.save-msg.show{opacity:1;}
-.requests-table{width:100%;border-collapse:collapse;}
-.requests-table th{text-align:left;font-size:11px;letter-spacing:1.5px;text-transform:uppercase;color:var(--text-dim);padding:12px 16px;border-bottom:1px solid var(--glass-border);}
-.requests-table td{padding:14px 16px;font-size:14px;border-bottom:1px solid rgba(255,255,255,0.03);color:var(--text-dim);}
-.requests-table tr:hover td{color:var(--text);}
-.status-badge{padding:4px 12px;border-radius:12px;font-size:11px;font-weight:600;}
-.status-new{background:rgba(0,212,255,0.12);color:var(--accent);}.status-done{background:rgba(0,230,118,0.12);color:var(--success);}.status-pending{background:rgba(255,107,53,0.12);color:var(--accent2);}
-
-footer{padding:60px 40px;border-top:1px solid var(--glass-border);text-align:center;}
-.footer-logo{font-family:'Bebas Neue',sans-serif;font-size:24px;letter-spacing:3px;color:var(--accent);margin-bottom:12px;}
-.footer-text{color:var(--text-dim);font-size:13px;font-weight:300;}
-
-/* RESPONSIVE */
-@media(max-width:1100px){.windows-grid{gap:20px;}.window-card{height:440px;}.steps-grid{grid-template-columns:1fr 1fr;}.stats-bar{grid-template-columns:repeat(2,1fr);}}
-@media(max-width:900px){
-  .windows-grid{grid-template-columns:1fr;max-width:500px;margin:0 auto;}.window-card{height:340px;}
-  .category-grid,.form-row,.admin-row{grid-template-columns:1fr;}
-  nav{padding:12px 20px;}.nav-links{display:none;}.burger{display:flex;}
-  .hero p{font-size:16px;padding:0 10px;}
-  .info-card,.form-card,.admin-card{padding:28px;}.price-tag{font-size:40px;}
-  .requests-table{display:block;overflow-x:auto;-webkit-overflow-scrolling:touch;}
-  .requests-table td,.requests-table th{padding:10px 12px;font-size:12px;white-space:nowrap;}
-  .about-grid{grid-template-columns:1fr;}.reviews-grid{grid-template-columns:1fr;}
-  .contact-grid{grid-template-columns:1fr;gap:0;}.steps-grid{grid-template-columns:1fr 1fr;}
-  .stats-bar{grid-template-columns:1fr 1fr;gap:16px;padding:0 20px 60px;}.section-wrap{padding:60px 20px;}
+<!-- ===== Картка організації для Google (впливає на видачу і Карти) ===== -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "LocalBusiness",
+  "name": "GlassGuard",
+  "description": "Поклейка бронеплівки, тонувальної та декоративної плівки на вікна. Київ та Київська область.",
+  "url": "https://ЗАМІНІТЬ-ДОМЕН.com.ua/",
+  "telephone": "+380000000000",
+  "email": "info@glassguard.com.ua",
+  "priceRange": "$$",
+  "areaServed": [{"@type":"City","name":"Київ"},{"@type":"AdministrativeArea","name":"Київська область"}],
+  "address": {"@type":"PostalAddress","addressLocality":"Київ","addressCountry":"UA"}
 }
-@media(max-width:600px){
-  nav{padding:10px 16px;}.logo-text{font-size:22px;letter-spacing:2px;}.logo-icon{width:36px;height:36px;}
-  .hero{padding:0 16px;}.hero h1{font-size:48px;letter-spacing:2px;}.hero p{font-size:14px;margin-bottom:30px;}
-  .section-wrap{padding:50px 16px;}.section-label{font-size:11px;}.section-title{font-size:32px;margin-bottom:30px;}
-  .windows-grid{max-width:100%;}.window-card{height:300px;border-radius:12px;}
-  .card-title{font-size:26px;}.card-subtitle{font-size:12px;}.card-icon{font-size:32px;margin-bottom:12px;}
-  .card-arrow{width:34px;height:34px;top:16px;right:16px;}.window-frame{padding:20px;}
-  .category-hero{padding:30px 16px 16px;}.category-title{font-size:36px;}
-  .category-grid{padding:0 16px 50px;gap:16px;}
-  .info-card{padding:24px;border-radius:12px;}.info-card h3{font-size:20px;}.info-card p,.info-card li{font-size:13px;}
-  .price-tag{font-size:36px;}.form-card{padding:24px;border-radius:12px;}
-  .form-group input,.form-group textarea,.form-group select{padding:12px 14px;font-size:16px;}
-  .submit-btn{width:100%;font-size:16px;padding:14px;}
-  .admin-container{padding:16px;}.admin-header{flex-direction:column;align-items:flex-start;gap:12px;}.admin-header h1{font-size:32px;}
-  .admin-tabs{gap:2px;padding:3px;}.admin-tab{padding:9px 12px;font-size:11px;}
-  .admin-card{padding:20px;border-radius:12px;}.admin-card h3{font-size:18px;}
-  .admin-field input,.admin-field textarea,.admin-field select{font-size:16px;padding:10px 12px;}.admin-field label{font-size:10px;}.save-btn{width:100%;}
-  footer{padding:40px 16px;}.footer-logo{font-size:20px;}.footer-text{font-size:11px;}
-  .toast{bottom:16px;right:16px;left:16px;font-size:13px;text-align:center;padding:14px 20px;}
-  .stats-bar{grid-template-columns:1fr 1fr;gap:12px;padding:0 16px 50px;}.stat-item{padding:24px 12px;}.stat-num{font-size:36px;}.stat-label{font-size:10px;}
-  .steps-grid{grid-template-columns:1fr;}.step-card{padding:24px 20px;}
-  .about-visual{gap:12px;}.faq-q{font-size:14px;padding:16px 18px;}.faq-a p{font-size:13px;}
-  .float-btn{bottom:20px;right:16px;}.float-main{width:50px;height:50px;font-size:20px;}.float-opt-icon{width:40px;height:40px;font-size:16px;}
-}
-@media(max-width:380px){.hero h1{font-size:38px;}.window-card{height:260px;}.card-title{font-size:22px;}.category-title{font-size:28px;}.price-tag{font-size:30px;}.mobile-menu a{font-size:28px;}.stat-num{font-size:30px;}}
-@media(hover:none)and(pointer:coarse){.card-tint .glass-pane{background:rgba(5,10,20,0.4);}.card-armor .crack-overlay{opacity:.6;}.card-decor .stripe-overlay{opacity:.5;}.nav-links a,.back-btn,.submit-btn,.save-btn,.admin-tab,.faq-q{min-height:44px;display:inline-flex;align-items:center;}}
-@keyframes fadeInUp{from{opacity:0;transform:translateY(30px);}to{opacity:1;transform:translateY(0);}}
-.animate-in{animation:fadeInUp .7s cubic-bezier(.25,.46,.45,.94) forwards;}
-.delay-1{animation-delay:.1s;opacity:0;}.delay-2{animation-delay:.2s;opacity:0;}.delay-3{animation-delay:.3s;opacity:0;}
-.toast{position:fixed;bottom:30px;right:30px;padding:16px 28px;background:var(--bg-card);border:1px solid var(--success);border-radius:10px;color:var(--success);font-size:14px;z-index:9999;transform:translateY(100px);opacity:0;transition:all .4s cubic-bezier(.25,.46,.45,.94);}.toast.show{transform:translateY(0);opacity:1;}
-</style>
+</script>
 </head>
 <body>
-<nav id="mainNav">
-  <div class="logo" onclick="navigate('home')"><div class="logo-icon"><svg viewBox="0 0 44 44" fill="none" xmlns="http://www.w3.org/2000/svg"><rect x="4" y="4" width="36" height="36" rx="4" stroke="url(#lg)" stroke-width="2.5" fill="none"/><line x1="22" y1="4" x2="22" y2="40" stroke="url(#lg)" stroke-width="1.5"/><line x1="4" y1="22" x2="40" y2="22" stroke="url(#lg)" stroke-width="1.5"/><rect x="10" y="10" width="10" height="10" rx="1" fill="rgba(0,212,255,0.15)" stroke="var(--accent)" stroke-width=".5"/><rect x="24" y="10" width="10" height="10" rx="1" fill="rgba(0,212,255,0.08)" stroke="var(--accent)" stroke-width=".5"/><rect x="10" y="24" width="10" height="10" rx="1" fill="rgba(0,212,255,0.08)" stroke="var(--accent)" stroke-width=".5"/><rect x="24" y="24" width="10" height="10" rx="1" fill="rgba(0,212,255,0.12)" stroke="var(--accent)" stroke-width=".5"/><defs><linearGradient id="lg" x1="4" y1="4" x2="40" y2="40"><stop offset="0%" stop-color="#00d4ff"/><stop offset="100%" stop-color="#7b68ee"/></linearGradient></defs></svg></div><span class="logo-text">GLASSGUARD</span></div>
-  <div class="nav-links"><a onclick="navigate('home')" id="nav-home" class="active">Головна</a><a onclick="navigate('tint')" id="nav-tint">Тонування</a><a onclick="navigate('armor')" id="nav-armor">Бронеплівка</a><a onclick="navigate('decor')" id="nav-decor">Декоративна</a><a onclick="navigate('admin')" class="admin-btn" id="nav-admin">Адмін</a></div>
-  <button class="burger" id="burger" onclick="toggleMobile()"><span></span><span></span><span></span></button>
+
+<a class="skip-link" href="#main">Перейти до вмісту</a>
+
+<!-- ================= ШАПКА ================= -->
+<nav class="site-nav">
+  <a class="logo" href="index.html" aria-label="GlassGuard — на головну">
+    <span class="logo-icon" aria-hidden="true">
+      <svg viewBox="0 0 44 44" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <rect x="4" y="4" width="36" height="36" rx="4" stroke="url(#lg)" stroke-width="2.5"/>
+        <line x1="22" y1="4" x2="22" y2="40" stroke="url(#lg)" stroke-width="1.5"/>
+        <line x1="4" y1="22" x2="40" y2="22" stroke="url(#lg)" stroke-width="1.5"/>
+        <rect x="10" y="10" width="10" height="10" rx="1" fill="rgba(0,212,255,.16)"/>
+        <rect x="24" y="24" width="10" height="10" rx="1" fill="rgba(255,107,53,.22)"/>
+        <defs><linearGradient id="lg" x1="4" y1="4" x2="40" y2="40">
+          <stop offset="0%" stop-color="#00d4ff"/><stop offset="100%" stop-color="#ff6b35"/>
+        </linearGradient></defs>
+      </svg>
+    </span>
+    <span class="logo-text">GLASSGUARD</span>
+  </a>
+
+  <div class="nav-links">
+    <a href="index.html" aria-current="page">Головна</a>
+    <a href="broneplivka.html">Бронеплівка</a>
+    <a href="tonuvannya.html">Тонування</a>
+    <a href="dekoratyvna.html">Декоративна</a>
+    <a href="#kontakty">Контакти</a>
+    <a class="nav-phone" href="tel:+380000000000">+380 00 000 00 00</a>
+  </div>
+
+  <a class="nav-call" href="tel:+380000000000" aria-label="Зателефонувати">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1 1 .4 1.9.7 2.8a2 2 0 0 1-.5 2.1L8.1 9.9a16 16 0 0 0 6 6l1.3-1.2a2 2 0 0 1 2.1-.5c.9.3 1.8.6 2.8.7a2 2 0 0 1 1.7 2z"/></svg>
+  </a>
+
+  <button class="burger" id="burger" aria-expanded="false" aria-controls="mobileMenu" aria-label="Меню">
+    <span></span><span></span><span></span>
+  </button>
 </nav>
-<div class="mobile-menu" id="mobileMenu"><a onclick="mobileNav('home')">Головна</a><a onclick="mobileNav('tint')">Тонування</a><a onclick="mobileNav('armor')">Бронеплівка</a><a onclick="mobileNav('decor')">Декоративна</a><a onclick="mobileNav('admin')" class="mm-admin">Адмін панель</a></div>
 
-<!-- HOME -->
-<div class="page active" id="page-home">
-  <section class="hero"><div class="hero-bg"></div><h1 class="animate-in">GLASS<span>GUARD</span></h1><p class="animate-in delay-1">Професійна поклейка плівок на вікна. Захист, тонування та декор — індивідуальний підхід до кожного проєкту.</p><div class="scroll-indicator"><span>Обрати послугу</span><span>↓</span></div></section>
-
-  <div class="stats-bar"><div class="stat-item"><div class="stat-num" id="stat-years">7+</div><div class="stat-label">Років досвіду</div></div><div class="stat-item"><div class="stat-num" id="stat-orders">1200+</div><div class="stat-label">Виконаних замовлень</div></div><div class="stat-item"><div class="stat-num" id="stat-clients">980+</div><div class="stat-label">Задоволених клієнтів</div></div><div class="stat-item"><div class="stat-num" id="stat-guarantee">5</div><div class="stat-label">Років гарантії</div></div></div>
-
-  <section class="section-wrap" id="services"><div class="section-label">Наші послуги</div><div class="section-title">Оберіть тип плівки</div>
-    <div class="windows-grid">
-      <div class="window-card card-tint animate-in delay-1" onclick="navigate('tint')"><div class="glass-pane"></div><div class="card-arrow">→</div><div class="window-frame"><div class="card-content"><span class="card-icon">◐</span><div class="card-title" id="home-tint-title">ТОНУВАННЯ</div><div class="card-subtitle" id="home-tint-desc">Захист від сонця та зайвих поглядів. Комфортна атмосфера у приміщенні цілий рік.</div></div></div></div>
-      <div class="window-card card-armor animate-in delay-2" onclick="navigate('armor')"><div class="glass-pane"></div><div class="crack-overlay"><svg width="100%" height="100%" viewBox="0 0 400 500" xmlns="http://www.w3.org/2000/svg"><g stroke="rgba(255,255,255,0.25)" stroke-width="1.2" fill="none"><line x1="200" y1="200" x2="150" y2="120"/><line x1="200" y1="200" x2="280" y2="140"/><line x1="200" y1="200" x2="130" y2="260"/><line x1="200" y1="200" x2="290" y2="280"/><line x1="200" y1="200" x2="180" y2="310"/><line x1="200" y1="200" x2="240" y2="130"/><line x1="200" y1="200" x2="140" y2="190"/><line x1="200" y1="200" x2="260" y2="230"/><line x1="200" y1="200" x2="220" y2="300"/><line x1="200" y1="200" x2="160" y2="160"/><line x1="150" y1="120" x2="110" y2="70"/><line x1="150" y1="120" x2="100" y2="140"/><line x1="280" y1="140" x2="330" y2="90"/><line x1="280" y1="140" x2="320" y2="170"/><line x1="130" y1="260" x2="80" y2="300"/><line x1="130" y1="260" x2="90" y2="230"/><line x1="290" y1="280" x2="340" y2="330"/><line x1="290" y1="280" x2="330" y2="260"/><line x1="180" y1="310" x2="160" y2="380"/><line x1="220" y1="300" x2="250" y2="370"/><line x1="240" y1="130" x2="260" y2="80"/><line x1="160" y1="160" x2="120" y2="100"/></g><circle cx="200" cy="200" r="6" fill="rgba(255,255,255,0.15)"/><circle cx="200" cy="200" r="18" stroke="rgba(255,255,255,0.1)" stroke-width=".8" fill="none"/></svg></div><div class="card-arrow">→</div><div class="window-frame"><div class="card-content"><span class="card-icon">◈</span><div class="card-title" id="home-armor-title">БРОНЕПЛІВКА</div><div class="card-subtitle" id="home-armor-desc">Захист від зламу, вибухів та осколків. Безпека вашої оселі на першому місці.</div></div></div></div>
-      <div class="window-card card-decor animate-in delay-3" onclick="navigate('decor')"><div class="glass-pane"></div><div class="stripe-overlay"></div><div class="card-arrow">→</div><div class="window-frame"><div class="card-content"><span class="card-icon">❖</span><div class="card-title" id="home-decor-title">ДЕКОРАТИВНА</div><div class="card-subtitle" id="home-decor-desc">Матова, візерункова, кольорова плівка. Перетворіть скло на елемент дизайну.</div></div></div></div>
-    </div>
-  </section>
-
-  <section class="section-wrap"><div class="section-label">Процес</div><div class="section-title">Як ми працюємо</div>
-    <div class="steps-grid">
-      <div class="step-card"><div class="step-num">01</div><div class="step-icon">📞</div><div class="step-title" id="step1-title">Заявка</div><div class="step-text" id="step1-text">Ви залишаєте заявку на сайті або телефонуєте. Ми відповідаємо протягом 30 хвилин у робочий час.</div></div>
-      <div class="step-card"><div class="step-num">02</div><div class="step-icon">📐</div><div class="step-title" id="step2-title">Заміри</div><div class="step-text" id="step2-text">Майстер виїжджає на об'єкт, робить точні заміри та допомагає обрати оптимальну плівку.</div></div>
-      <div class="step-card"><div class="step-num">03</div><div class="step-icon">🔧</div><div class="step-title" id="step3-title">Монтаж</div><div class="step-text" id="step3-text">Професійна поклейка зі зняттям штапиків. Середній час — 30–40 хв на вікно. Без бруду та пилу.</div></div>
-      <div class="step-card"><div class="step-num">04</div><div class="step-icon">✅</div><div class="step-title" id="step4-title">Гарантія</div><div class="step-text" id="step4-text">Перевірка якості на місці, підписання акту та гарантія до 5 років на матеріал та роботу.</div></div>
-    </div>
-  </section>
-
-  <section class="section-wrap"><div class="section-label">Про компанію</div><div class="section-title">Чому обирають нас</div>
-    <div class="about-grid">
-      <div class="about-text"><p id="about-text-1">GlassGuard — це команда сертифікованих спеціалістів з поклейки віконних плівок у Києві та Київській області. Ми працюємо з 2019 року і за цей час реалізували понад 1200 проєктів для приватних осіб, бізнесу та державних установ.</p><p id="about-text-2">Використовуємо лише сертифіковані матеріали провідних виробників. Кожен монтаж виконується зі зняттям штапиків для максимальної щільності та ефективності покриття. Надаємо гарантію на всі види робіт.</p></div>
-      <div class="about-visual"><div class="about-box"><span class="about-box-icon">🏆</span><div class="about-box-title">Сертифіковані</div><div class="about-box-text">Матеріали з сертифікатами P1A–P3A</div></div><div class="about-box"><span class="about-box-icon">⚡</span><div class="about-box-title">Швидко</div><div class="about-box-text">Монтаж за 1 день навіть для великих об'єктів</div></div><div class="about-box"><span class="about-box-icon">🛡️</span><div class="about-box-title">Гарантія</div><div class="about-box-text">До 5 років на матеріал та роботу</div></div><div class="about-box"><span class="about-box-icon">🚗</span><div class="about-box-title">Виїзд</div><div class="about-box-text">Безкоштовний виїзд на заміри по Києву</div></div></div>
-    </div>
-  </section>
-
-  <section class="section-wrap"><div class="section-label">Відгуки</div><div class="section-title">Що кажуть клієнти</div>
-    <div class="reviews-grid">
-      <div class="review-card"><div class="review-stars">★★★★★</div><div class="review-text" id="review1-text">Замовляли бронеплівку на всі вікна квартири. Майстер приїхав вчасно, зробив все акуратно за пів дня. Тепер спимо спокійно.</div><div class="review-author"><div class="review-avatar" style="background:var(--accent)">О</div><div><div class="review-name" id="review1-name">Олена К.</div><div class="review-meta" id="review1-meta">Бронеплівка · Квартира, Київ</div></div></div></div>
-      <div class="review-card"><div class="review-stars">★★★★★</div><div class="review-text" id="review2-text">Поставили тонування в офіс — тепер влітку кондиціонер працює вдвічі менше. Плівка якісна, жодних бульбашок.</div><div class="review-author"><div class="review-avatar" style="background:var(--accent2)">А</div><div><div class="review-name" id="review2-name">Андрій М.</div><div class="review-meta" id="review2-meta">Тонування · Офіс, Бровари</div></div></div></div>
-      <div class="review-card"><div class="review-stars">★★★★★</div><div class="review-text" id="review3-text">Декоративна плівка на перегородки в ресторані — виглядає шикарно! Гості постійно питають де ми таке замовляли.</div><div class="review-author"><div class="review-avatar" style="background:var(--accent3)">І</div><div><div class="review-name" id="review3-name">Ірина В.</div><div class="review-meta" id="review3-meta">Декоративна · Ресторан, Київ</div></div></div></div>
-    </div>
-  </section>
-
-  <section class="section-wrap"><div class="section-label">Питання</div><div class="section-title">Часті запитання</div>
-    <div class="faq-list">
-      <div class="faq-item" onclick="toggleFaq(this)"><div class="faq-q"><span id="faq1-q">Скільки часу тримається плівка на вікнах?</span><span class="faq-toggle">+</span></div><div class="faq-a"><p id="faq1-a">Якісна плівка тримається від 10 до 25 років. Бронеплівка має необмежений термін служби. Гарантія до 5 років на монтаж.</p></div></div>
-      <div class="faq-item" onclick="toggleFaq(this)"><div class="faq-q"><span id="faq2-q">Чи можна зняти плівку без пошкодження скла?</span><span class="faq-toggle">+</span></div><div class="faq-a"><p id="faq2-a">Так, плівка знімається без пошкоджень. Ми також надаємо послугу демонтажу старої плівки.</p></div></div>
-      <div class="faq-item" onclick="toggleFaq(this)"><div class="faq-q"><span id="faq3-q">Чи працюєте ви за межами Києва?</span><span class="faq-toggle">+</span></div><div class="faq-a"><p id="faq3-a">Так, ми працюємо по всій Київській області. Для великих замовлень виїжджаємо в будь-яке місто України.</p></div></div>
-      <div class="faq-item" onclick="toggleFaq(this)"><div class="faq-q"><span id="faq4-q">Яка різниця між тонувальною та бронеплівкою?</span><span class="faq-toggle">+</span></div><div class="faq-a"><p id="faq4-a">Тонувальна — захист від сонця та приватність. Бронеплівка — фізичний захист від ударів та зламу. Можна комбінувати.</p></div></div>
-      <div class="faq-item" onclick="toggleFaq(this)"><div class="faq-q"><span id="faq5-q">Скільки коштує виїзд на заміри?</span><span class="faq-toggle">+</span></div><div class="faq-a"><p id="faq5-a">Виїзд на заміри по Києву — безкоштовний. За межі міста — включається у фінальну ціну при замовленні.</p></div></div>
-    </div>
-  </section>
-
-  <section class="contact-section"><div class="section-wrap"><div class="section-label">Контакти</div><div class="section-title">Зв'яжіться з нами</div>
-    <div class="contact-grid"><div class="contact-item"><span class="contact-item-icon">📞</span><div class="contact-item-label">Телефон</div><div class="contact-item-value"><a href="tel:+380000000000" id="contact-phone-link">+380 (XX) XXX-XX-XX</a></div></div><div class="contact-item"><span class="contact-item-icon">✉️</span><div class="contact-item-label">Email</div><div class="contact-item-value"><a href="mailto:info@glassguard.com.ua" id="contact-email-link">info@glassguard.com.ua</a></div></div><div class="contact-item"><span class="contact-item-icon">📍</span><div class="contact-item-label">Адреса</div><div class="contact-item-value" id="contact-address-text">Київ, Україна</div></div></div>
-  </div></section>
-
-  <footer><div class="footer-logo">GLASSGUARD</div><div class="footer-text">© 2026 GlassGuard — Професійна поклейка плівок на вікна. Київ, Україна.</div></footer>
+<div class="mobile-menu" id="mobileMenu">
+  <a href="index.html">Головна</a>
+  <a href="broneplivka.html">Бронеплівка</a>
+  <a href="tonuvannya.html">Тонування</a>
+  <a href="dekoratyvna.html">Декоративна</a>
+  <a href="#kontakty">Контакти</a>
+  <a class="mm-phone" href="tel:+380000000000">+380 00 000 00 00</a>
 </div>
 
-<!-- TINT -->
-<div class="page category-page" id="page-tint"><div class="category-hero"><div class="back-btn" onclick="navigate('home')">← Повернутися</div><span class="category-badge badge-tint">Тонувальна плівка</span><div class="category-title" id="cat-tint-title">ТОНУВАННЯ ВІКОН</div></div>
-  <div class="category-grid"><div class="info-card"><h3><span class="ic">💰</span> Вартість</h3><div class="price-tag" id="cat-tint-price">від 270 грн</div><div class="price-unit">за м² (матеріал + монтаж)</div><p style="margin-top:16px" id="cat-tint-price-note">Фінальна ціна залежить від типу плівки, площі скління та складності монтажу.</p></div><div class="info-card"><h3><span class="ic">📋</span> Опис послуги</h3><p id="cat-tint-desc">Тонувальна плівка знижує проникнення сонячного світла на 50–85%, захищає від ультрафіолету на 99% та зменшує нагрів приміщення. Термін служби — від 10 років.</p></div><div class="info-card" style="grid-column:1/-1;"><h3><span class="ic">✅</span> Переваги</h3><ul id="cat-tint-benefits"><li>Зниження температури в приміщенні на 5–10°C влітку</li><li>Блокування 99% ультрафіолетового випромінювання</li><li>Захист меблів та текстилю від вигорання</li><li>Приватність — зовні скло стає дзеркальним вдень</li><li>Економія електроенергії на кондиціонуванні</li><li>Естетичний зовнішній вигляд фасаду</li></ul></div>
-    <div class="form-card"><h3>📩 Залишити заявку</h3><div class="form-row"><div class="form-group"><label>Ім'я</label><input type="text" placeholder="Ваше ім'я" class="contact-name"></div><div class="form-group"><label>Телефон</label><input type="tel" placeholder="+380..." class="contact-phone"></div></div><div class="form-row"><div class="form-group"><label>Тип об'єкту</label><select class="contact-type"><option>Квартира</option><option>Приватний будинок</option><option>Офіс</option><option>Інше</option></select></div><div class="form-group"><label>Площа скління (м²)</label><input type="text" placeholder="~10" class="contact-area"></div></div><div class="form-row"><div class="form-group full"><label>Коментар</label><textarea placeholder="Опишіть ваш запит..." class="contact-msg"></textarea></div></div><button class="submit-btn" onclick="submitForm('tint')">Надіслати заявку</button></div>
-  </div><footer><div class="footer-logo">GLASSGUARD</div><div class="footer-text">© 2026 GlassGuard</div></footer></div>
+<main id="main">
 
-<!-- ARMOR -->
-<div class="page category-page" id="page-armor"><div class="category-hero"><div class="back-btn" onclick="navigate('home')">← Повернутися</div><span class="category-badge badge-armor">Бронеплівка</span><div class="category-title" id="cat-armor-title">БРОНЕПЛІВКА НА ВІКНА</div></div>
-  <div class="category-grid"><div class="info-card"><h3><span class="ic">💰</span> Вартість</h3><div class="price-tag" id="cat-armor-price">від 450 грн</div><div class="price-unit">за м² (матеріал + монтаж)</div><p style="margin-top:16px" id="cat-armor-price-note">Ціна залежить від товщини плівки (100–300 мкм) та класу захисту.</p></div><div class="info-card"><h3><span class="ic">📋</span> Опис послуги</h3><p id="cat-armor-desc">Бронеплівка — ударостійке полімерне покриття 100–300 мкм. Запобігає розльоту осколків при вибуху, ускладнює злом. Класи захисту P1A–P3A.</p></div><div class="info-card" style="grid-column:1/-1;"><h3><span class="ic">✅</span> Переваги</h3><ul id="cat-armor-benefits"><li>Захист від осколків при вибухах та ударних хвилях</li><li>Запобігання несанкціонованому проникненню</li><li>Блокування до 99% ультрафіолету</li><li>Зниження рівня шуму з вулиці</li><li>Прозорість — не змінює вигляд вікна</li><li>Необмежений термін служби</li></ul></div>
-    <div class="form-card"><h3>📩 Залишити заявку</h3><div class="form-row"><div class="form-group"><label>Ім'я</label><input type="text" placeholder="Ваше ім'я" class="contact-name"></div><div class="form-group"><label>Телефон</label><input type="tel" placeholder="+380..." class="contact-phone"></div></div><div class="form-row"><div class="form-group"><label>Тип об'єкту</label><select class="contact-type"><option>Квартира</option><option>Приватний будинок</option><option>Офіс</option><option>Магазин / Банк</option><option>Інше</option></select></div><div class="form-group"><label>Кількість вікон</label><input type="text" placeholder="~5" class="contact-area"></div></div><div class="form-row"><div class="form-group full"><label>Коментар</label><textarea placeholder="Опишіть ваш запит..." class="contact-msg"></textarea></div></div><button class="submit-btn" onclick="submitForm('armor')">Надіслати заявку</button></div>
-  </div><footer><div class="footer-logo">GLASSGUARD</div><div class="footer-text">© 2026 GlassGuard</div></footer></div>
-
-<!-- DECOR -->
-<div class="page category-page" id="page-decor"><div class="category-hero"><div class="back-btn" onclick="navigate('home')">← Повернутися</div><span class="category-badge badge-decor">Декоративна плівка</span><div class="category-title" id="cat-decor-title">ДЕКОРАТИВНА ПЛІВКА</div></div>
-  <div class="category-grid"><div class="info-card"><h3><span class="ic">💰</span> Вартість</h3><div class="price-tag" id="cat-decor-price">від 200 грн</div><div class="price-unit">за м² (матеріал + монтаж)</div><p style="margin-top:16px" id="cat-decor-price-note">Вартість залежить від типу візерунка та площі скління.</p></div><div class="info-card"><h3><span class="ic">📋</span> Опис послуги</h3><p id="cat-decor-desc">Декоративна плівка перетворює скло на елемент інтер'єру. Матові, візерункові, смугасті та кольорові варіанти. Легко замінюється без пошкодження скла.</p></div><div class="info-card" style="grid-column:1/-1;"><h3><span class="ic">✅</span> Переваги</h3><ul id="cat-decor-benefits"><li>Приватність без штор та жалюзі</li><li>Широкий вибір: матові, смугасті, геометричні, вітражні</li><li>Пропускає природне світло</li><li>Легке зняття та заміна</li><li>Доступна ціна порівняно з піскоструменевим склом</li><li>Захист від УФ-випромінювання</li></ul></div>
-    <div class="form-card"><h3>📩 Залишити заявку</h3><div class="form-row"><div class="form-group"><label>Ім'я</label><input type="text" placeholder="Ваше ім'я" class="contact-name"></div><div class="form-group"><label>Телефон</label><input type="tel" placeholder="+380..." class="contact-phone"></div></div><div class="form-row"><div class="form-group"><label>Тип об'єкту</label><select class="contact-type"><option>Квартира</option><option>Офіс</option><option>Магазин / Вітрина</option><option>Ресторан / Кафе</option><option>Інше</option></select></div><div class="form-group"><label>Площа скління (м²)</label><input type="text" placeholder="~8" class="contact-area"></div></div><div class="form-row"><div class="form-group full"><label>Коментар</label><textarea placeholder="Опишіть бажаний стиль..." class="contact-msg"></textarea></div></div><button class="submit-btn" onclick="submitForm('decor')">Надіслати заявку</button></div>
-  </div><footer><div class="footer-logo">GLASSGUARD</div><div class="footer-text">© 2026 GlassGuard</div></footer></div>
-
-<!-- ADMIN -->
-<div class="page admin-page" id="page-admin"><div class="admin-container">
-  <div class="admin-header"><h1>Панель адміністратора</h1><div class="back-btn" onclick="navigate('home')">← На сайт</div></div>
-  <div class="admin-tabs">
-    <button class="admin-tab active" onclick="switchTab(this,'content')">Контент</button>
-    <button class="admin-tab" onclick="switchTab(this,'prices')">Ціни</button>
-    <button class="admin-tab" onclick="switchTab(this,'benefits')">Переваги</button>
-    <button class="admin-tab" onclick="switchTab(this,'steps')">Як працюємо</button>
-    <button class="admin-tab" onclick="switchTab(this,'about')">Про нас</button>
-    <button class="admin-tab" onclick="switchTab(this,'reviews')">Відгуки</button>
-    <button class="admin-tab" onclick="switchTab(this,'faq')">FAQ</button>
-    <button class="admin-tab" onclick="switchTab(this,'stats')">Лічильники</button>
-    <button class="admin-tab" onclick="switchTab(this,'company')">Компанія</button>
-    <button class="admin-tab" onclick="switchTab(this,'requests')">Заявки</button>
+<!-- ================= ГОЛОВНИЙ ЕКРАН ================= -->
+<section class="hero">
+  <span class="hero-tag">Київ та область · виїзд на заміри безкоштовно</span>
+  <h1>БРОНЕПЛІВКА<br>НА <em>ВІКНА</em></h1>
+  <p>Скло не розлітається на осколки. Понад 3000 виконаних об'єктів, з них 95% — саме захисні плівки. Це те, чим ми займаємось щодня, а не одна з послуг у списку.</p>
+  <div class="hero-actions">
+    <a class="btn btn-primary" href="broneplivka.html">Про бронеплівку та ціни</a>
+    <a class="btn btn-ghost" href="#zayavka">Викликати замірника</a>
   </div>
+  <p class="hero-note">Відповідаємо протягом 30 хвилин у робочий час</p>
+</section>
 
-  <div class="admin-panel active" id="panel-content">
-    <div class="admin-card"><h3>◐ Тонування</h3><div class="admin-row"><div class="admin-field"><label>Заголовок головної</label><input id="adm-tint-home-title" value="ТОНУВАННЯ"></div><div class="admin-field"><label>Підпис</label><input id="adm-tint-home-desc" value="Захист від сонця та зайвих поглядів. Комфортна атмосфера у приміщенні цілий рік."></div></div><div class="admin-row"><div class="admin-field full"><label>Заголовок сторінки</label><input id="adm-tint-cat-title" value="ТОНУВАННЯ ВІКОН"></div></div><div class="admin-row"><div class="admin-field full"><label>Опис</label><textarea id="adm-tint-desc">Тонувальна плівка знижує проникнення сонячного світла на 50–85%, захищає від ультрафіолету на 99% та зменшує нагрів приміщення. Термін служби — від 10 років.</textarea></div></div></div>
-    <div class="admin-card"><h3>◈ Бронеплівка</h3><div class="admin-row"><div class="admin-field"><label>Заголовок головної</label><input id="adm-armor-home-title" value="БРОНЕПЛІВКА"></div><div class="admin-field"><label>Підпис</label><input id="adm-armor-home-desc" value="Захист від зламу, вибухів та осколків. Безпека вашої оселі на першому місці."></div></div><div class="admin-row"><div class="admin-field full"><label>Заголовок сторінки</label><input id="adm-armor-cat-title" value="БРОНЕПЛІВКА НА ВІКНА"></div></div><div class="admin-row"><div class="admin-field full"><label>Опис</label><textarea id="adm-armor-desc">Бронеплівка — ударостійке полімерне покриття 100–300 мкм. Запобігає розльоту осколків при вибуху, ускладнює злом. Класи захисту P1A–P3A.</textarea></div></div></div>
-    <div class="admin-card"><h3>❖ Декоративна</h3><div class="admin-row"><div class="admin-field"><label>Заголовок головної</label><input id="adm-decor-home-title" value="ДЕКОРАТИВНА"></div><div class="admin-field"><label>Підпис</label><input id="adm-decor-home-desc" value="Матова, візерункова, кольорова плівка. Перетворіть скло на елемент дизайну."></div></div><div class="admin-row"><div class="admin-field full"><label>Заголовок сторінки</label><input id="adm-decor-cat-title" value="ДЕКОРАТИВНА ПЛІВКА"></div></div><div class="admin-row"><div class="admin-field full"><label>Опис</label><textarea id="adm-decor-desc">Декоративна плівка перетворює скло на елемент інтер'єру. Матові, візерункові, смугасті та кольорові варіанти. Легко замінюється.</textarea></div></div></div>
-    <button class="save-btn" onclick="saveAll('content')">Зберегти</button><span class="save-msg" id="msg-content">✓ Збережено!</span>
+<!-- ================= ЛІЧИЛЬНИКИ ================= -->
+<section class="stats" aria-label="Показники роботи">
+  <div class="stat"><b>3000+</b><span>Виконаних об'єктів</span></div>
+  <div class="stat"><b>95%</b><span>Робіт — бронеплівка</span></div>
+  <div class="stat placeholder"><b>20••</b><span>Рік початку роботи</span></div>
+  <div class="stat placeholder"><b>••</b><span>Років гарантії</span></div>
+</section>
+
+<!-- ================= ГОЛОВНА ПОСЛУГА ================= -->
+<section class="feature">
+  <div class="feature-inner">
+    <div>
+      <span class="feature-badge">Основний напрямок</span>
+      <h2>ЗАХИСНА БРОНЕПЛІВКА</h2>
+      <p>Ударостійке багатошарове полімерне покриття товщиною 100–300 мкм. Утримує скло цілим полотном при ударі, вибуховій хвилі чи спробі зламу — осколки не розлітаються по приміщенню.</p>
+      <a class="btn btn-primary" href="broneplivka.html">Детально та ціни</a>
+    </div>
+    <ul class="feature-list">
+      <li>Осколки утримуються плівкою, а не летять у кімнату</li>
+      <li>Суттєво ускладнює проникнення через вікно</li>
+      <li>Прозора — зовнішній вигляд вікна не змінюється</li>
+      <li>Блокує до 99% ультрафіолету</li>
+      <li>Монтаж зі зняттям штапиків — по всій площі скла</li>
+      <li>Один об'єкт — як правило, один день роботи</li>
+    </ul>
   </div>
+</section>
 
-  <div class="admin-panel" id="panel-prices"><div class="admin-card"><h3>Ціни</h3><div class="admin-row"><div class="admin-field"><label>Тонування</label><input id="adm-tint-price" value="від 270 грн"></div><div class="admin-field"><label>Примітка</label><input id="adm-tint-price-note" value="Фінальна ціна залежить від типу плівки, площі скління та складності монтажу."></div></div><div class="admin-row"><div class="admin-field"><label>Бронеплівка</label><input id="adm-armor-price" value="від 450 грн"></div><div class="admin-field"><label>Примітка</label><input id="adm-armor-price-note" value="Ціна залежить від товщини плівки (100–300 мкм) та класу захисту."></div></div><div class="admin-row"><div class="admin-field"><label>Декоративна</label><input id="adm-decor-price" value="від 200 грн"></div><div class="admin-field"><label>Примітка</label><input id="adm-decor-price-note" value="Вартість залежить від типу візерунка та площі скління."></div></div></div><button class="save-btn" onclick="saveAll('prices')">Зберегти</button><span class="save-msg" id="msg-prices">✓</span></div>
+<!-- ================= ІНШІ ПОСЛУГИ ================= -->
+<section class="wrap" id="poslugy">
+  <p class="eyebrow">Також виконуємо</p>
+  <h2 class="h2">ІНШІ ВИДИ ПЛІВОК</h2>
+  <p class="lead">Ті самі майстри й та сама технологія монтажу — якщо потрібен не захист, а комфорт або приватність.</p>
 
-  <div class="admin-panel" id="panel-benefits"><div class="admin-card"><h3>◐ Тонування</h3><p style="font-size:12px;color:var(--text-dim);margin-bottom:12px;">Один рядок = один пункт</p><div class="admin-field full"><textarea id="adm-tint-benefits" rows="7">Зниження температури в приміщенні на 5–10°C влітку
-Блокування 99% ультрафіолетового випромінювання
-Захист меблів та текстилю від вигорання
-Приватність — зовні скло стає дзеркальним вдень
-Економія електроенергії на кондиціонуванні
-Естетичний зовнішній вигляд фасаду</textarea></div></div><div class="admin-card"><h3>◈ Бронеплівка</h3><div class="admin-field full"><textarea id="adm-armor-benefits" rows="7">Захист від осколків при вибухах та ударних хвилях
-Запобігання несанкціонованому проникненню
-Блокування до 99% ультрафіолету
-Зниження рівня шуму з вулиці
-Прозорість — не змінює вигляд вікна
-Необмежений термін служби</textarea></div></div><div class="admin-card"><h3>❖ Декоративна</h3><div class="admin-field full"><textarea id="adm-decor-benefits" rows="7">Приватність без штор та жалюзі
-Широкий вибір: матові, смугасті, геометричні, вітражні
-Пропускає природне світло
-Легке зняття та заміна
-Доступна ціна порівняно з піскоструменевим склом
-Захист від УФ-випромінювання</textarea></div></div><button class="save-btn" onclick="saveAll('benefits')">Зберегти</button><span class="save-msg" id="msg-benefits">✓</span></div>
+  <div class="services">
+    <a class="svc svc-tint" href="tonuvannya.html">
+      <span class="svc-arrow" aria-hidden="true">
+        <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+      </span>
+      <span class="svc-inner">
+        <span class="svc-icon" aria-hidden="true">
+          <svg viewBox="0 0 40 40" fill="none" stroke="#00d4ff" stroke-width="2"><circle cx="20" cy="20" r="14"/><path d="M20 6a14 14 0 0 0 0 28z" fill="#00d4ff" stroke="none"/></svg>
+        </span>
+        <h3>ТОНУВАННЯ</h3>
+        <p>Захист від перегріву та сторонніх поглядів. Менше навантаження на кондиціонер улітку, меблі не вигорають.</p>
+        <span class="svc-price">Ціна за м² — уточнюється</span>
+      </span>
+    </a>
 
-  <div class="admin-panel" id="panel-steps"><div class="admin-card"><h3>Кроки роботи</h3><div class="admin-row"><div class="admin-field"><label>Крок 1 — Назва</label><input id="adm-step1-title" value="Заявка"></div><div class="admin-field"><label>Опис</label><input id="adm-step1-text" value="Ви залишаєте заявку на сайті або телефонуєте. Ми відповідаємо протягом 30 хвилин у робочий час."></div></div><div class="admin-row"><div class="admin-field"><label>Крок 2 — Назва</label><input id="adm-step2-title" value="Заміри"></div><div class="admin-field"><label>Опис</label><input id="adm-step2-text" value="Майстер виїжджає на об'єкт, робить точні заміри та допомагає обрати оптимальну плівку."></div></div><div class="admin-row"><div class="admin-field"><label>Крок 3 — Назва</label><input id="adm-step3-title" value="Монтаж"></div><div class="admin-field"><label>Опис</label><input id="adm-step3-text" value="Професійна поклейка зі зняттям штапиків. Середній час — 30–40 хв на вікно. Без бруду та пилу."></div></div><div class="admin-row"><div class="admin-field"><label>Крок 4 — Назва</label><input id="adm-step4-title" value="Гарантія"></div><div class="admin-field"><label>Опис</label><input id="adm-step4-text" value="Перевірка якості на місці, підписання акту та гарантія до 5 років на матеріал та роботу."></div></div></div><button class="save-btn" onclick="saveAll('steps')">Зберегти</button><span class="save-msg" id="msg-steps">✓</span></div>
+    <a class="svc svc-decor" href="dekoratyvna.html">
+      <span class="svc-arrow" aria-hidden="true">
+        <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+      </span>
+      <span class="svc-inner">
+        <span class="svc-icon" aria-hidden="true">
+          <svg viewBox="0 0 40 40" fill="none" stroke="#7b68ee" stroke-width="2"><rect x="7" y="7" width="26" height="26" rx="2"/><line x1="14" y1="7" x2="14" y2="33"/><line x1="20" y1="7" x2="20" y2="33"/><line x1="26" y1="7" x2="26" y2="33"/></svg>
+        </span>
+        <h3>ДЕКОРАТИВНА</h3>
+        <p>Матова, смугаста, візерункова. Приватність без штор — для перегородок, санвузлів, вітрин і офісів.</p>
+        <span class="svc-price">Ціна за м² — уточнюється</span>
+      </span>
+    </a>
+  </div>
+</section>
 
-  <div class="admin-panel" id="panel-about"><div class="admin-card"><h3>Текст «Про нас»</h3><div class="admin-row"><div class="admin-field full"><label>Абзац 1</label><textarea id="adm-about1">GlassGuard — це команда сертифікованих спеціалістів з поклейки віконних плівок у Києві та Київській області. Ми працюємо з 2019 року і за цей час реалізували понад 1200 проєктів для приватних осіб, бізнесу та державних установ.</textarea></div></div><div class="admin-row"><div class="admin-field full"><label>Абзац 2</label><textarea id="adm-about2">Використовуємо лише сертифіковані матеріали провідних виробників. Кожен монтаж виконується зі зняттям штапиків для максимальної щільності та ефективності покриття. Надаємо гарантію на всі види робіт.</textarea></div></div></div><button class="save-btn" onclick="saveAll('about')">Зберегти</button><span class="save-msg" id="msg-about">✓</span></div>
+<!-- ================= НАШІ РОБОТИ ================= -->
+<section class="wrap" id="roboty">
+  <p class="eyebrow">Портфоліо</p>
+  <h2 class="h2">НАШІ РОБОТИ</h2>
+  <p class="lead">Реальні об'єкти, а не стокові картинки.</p>
 
-  <div class="admin-panel" id="panel-reviews"><div class="admin-card"><h3>Відгук 1</h3><div class="admin-row"><div class="admin-field"><label>Ім'я</label><input id="adm-rev1-name" value="Олена К."></div><div class="admin-field"><label>Мета-інфо</label><input id="adm-rev1-meta" value="Бронеплівка · Квартира, Київ"></div></div><div class="admin-row"><div class="admin-field full"><label>Текст</label><textarea id="adm-rev1-text">Замовляли бронеплівку на всі вікна квартири. Майстер приїхав вчасно, зробив все акуратно за пів дня. Тепер спимо спокійно.</textarea></div></div></div><div class="admin-card"><h3>Відгук 2</h3><div class="admin-row"><div class="admin-field"><label>Ім'я</label><input id="adm-rev2-name" value="Андрій М."></div><div class="admin-field"><label>Мета-інфо</label><input id="adm-rev2-meta" value="Тонування · Офіс, Бровари"></div></div><div class="admin-row"><div class="admin-field full"><label>Текст</label><textarea id="adm-rev2-text">Поставили тонування в офіс — тепер влітку кондиціонер працює вдвічі менше. Плівка якісна, жодних бульбашок.</textarea></div></div></div><div class="admin-card"><h3>Відгук 3</h3><div class="admin-row"><div class="admin-field"><label>Ім'я</label><input id="adm-rev3-name" value="Ірина В."></div><div class="admin-field"><label>Мета-інфо</label><input id="adm-rev3-meta" value="Декоративна · Ресторан, Київ"></div></div><div class="admin-row"><div class="admin-field full"><label>Текст</label><textarea id="adm-rev3-text">Декоративна плівка на перегородки в ресторані — виглядає шикарно! Гості постійно питають де ми таке замовляли.</textarea></div></div></div><button class="save-btn" onclick="saveAll('reviews')">Зберегти</button><span class="save-msg" id="msg-reviews">✓</span></div>
+  <!-- ЯК ДОДАТИ ФОТО: замініть блок <div class="gal-item gal-empty">…</div>
+       на <div class="gal-item"><img src="assets/foto/1.jpg" alt="Бронеплівка, квартира, Київ"></div>
+       Файли покладіть у папку assets/foto/ -->
+  <div class="gallery">
+    <div class="gal-item gal-empty"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="3" y="5" width="18" height="14" rx="2"/><circle cx="8.5" cy="10.5" r="1.5"/><path d="m21 15-5-5L5 19"/></svg>Фото об'єкта</div>
+    <div class="gal-item gal-empty"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="3" y="5" width="18" height="14" rx="2"/><circle cx="8.5" cy="10.5" r="1.5"/><path d="m21 15-5-5L5 19"/></svg>Фото об'єкта</div>
+    <div class="gal-item gal-empty"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="3" y="5" width="18" height="14" rx="2"/><circle cx="8.5" cy="10.5" r="1.5"/><path d="m21 15-5-5L5 19"/></svg>Фото об'єкта</div>
+    <div class="gal-item gal-empty"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="3" y="5" width="18" height="14" rx="2"/><circle cx="8.5" cy="10.5" r="1.5"/><path d="m21 15-5-5L5 19"/></svg>Процес монтажу</div>
+    <div class="gal-item gal-empty"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="3" y="5" width="18" height="14" rx="2"/><circle cx="8.5" cy="10.5" r="1.5"/><path d="m21 15-5-5L5 19"/></svg>До / після</div>
+    <div class="gal-item gal-empty"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="3" y="5" width="18" height="14" rx="2"/><circle cx="8.5" cy="10.5" r="1.5"/><path d="m21 15-5-5L5 19"/></svg>Об'єкт бізнесу</div>
+  </div>
+</section>
 
-  <div class="admin-panel" id="panel-faq"><div class="admin-card"><h3>FAQ</h3><div class="admin-row"><div class="admin-field"><label>Питання 1</label><input id="adm-faq1-q" value="Скільки часу тримається плівка на вікнах?"></div><div class="admin-field"><label>Відповідь</label><input id="adm-faq1-a" value="Якісна плівка тримається від 10 до 25 років. Бронеплівка має необмежений термін служби. Гарантія до 5 років на монтаж."></div></div><div class="admin-row"><div class="admin-field"><label>Питання 2</label><input id="adm-faq2-q" value="Чи можна зняти плівку без пошкодження скла?"></div><div class="admin-field"><label>Відповідь</label><input id="adm-faq2-a" value="Так, плівка знімається без пошкоджень. Ми також надаємо послугу демонтажу старої плівки."></div></div><div class="admin-row"><div class="admin-field"><label>Питання 3</label><input id="adm-faq3-q" value="Чи працюєте ви за межами Києва?"></div><div class="admin-field"><label>Відповідь</label><input id="adm-faq3-a" value="Так, ми працюємо по всій Київській області. Для великих замовлень виїжджаємо в будь-яке місто України."></div></div><div class="admin-row"><div class="admin-field"><label>Питання 4</label><input id="adm-faq4-q" value="Яка різниця між тонувальною та бронеплівкою?"></div><div class="admin-field"><label>Відповідь</label><input id="adm-faq4-a" value="Тонувальна — захист від сонця та приватність. Бронеплівка — фізичний захист від ударів та зламу. Можна комбінувати."></div></div><div class="admin-row"><div class="admin-field"><label>Питання 5</label><input id="adm-faq5-q" value="Скільки коштує виїзд на заміри?"></div><div class="admin-field"><label>Відповідь</label><input id="adm-faq5-a" value="Виїзд на заміри по Києву — безкоштовний. За межі міста — включається у фінальну ціну при замовленні."></div></div></div><button class="save-btn" onclick="saveAll('faq')">Зберегти</button><span class="save-msg" id="msg-faq">✓</span></div>
+<!-- ================= ЯК ПРАЦЮЄМО ================= -->
+<section class="wrap">
+  <p class="eyebrow">Процес</p>
+  <h2 class="h2">ЯК МИ ПРАЦЮЄМО</h2>
+  <div class="steps">
+    <div class="step"><b>01</b><h3>Заявка</h3><p>Ви телефонуєте або залишаєте заявку на сайті. Відповідаємо протягом 30 хвилин у робочий час.</p></div>
+    <div class="step"><b>02</b><h3>Заміри</h3><p>Майстер виїжджає на об'єкт, робить точні заміри та допомагає підібрати плівку під задачу. По Києву — безкоштовно.</p></div>
+    <div class="step"><b>03</b><h3>Монтаж</h3><p>Поклейка зі зняттям штапиків — плівка лягає на все полотно скла, без видимого краю. Чисто, без пилу.</p></div>
+    <div class="step"><b>04</b><h3>Гарантія</h3><p>Перевірка якості на місці разом із вами, підписання акту та гарантія на матеріал і роботу.</p></div>
+  </div>
+</section>
 
-  <div class="admin-panel" id="panel-stats"><div class="admin-card"><h3>Лічильники довіри</h3><div class="admin-row"><div class="admin-field"><label>Років досвіду</label><input id="adm-stat-years" value="7+"></div><div class="admin-field"><label>Замовлень</label><input id="adm-stat-orders" value="1200+"></div></div><div class="admin-row"><div class="admin-field"><label>Клієнтів</label><input id="adm-stat-clients" value="980+"></div><div class="admin-field"><label>Гарантія (років)</label><input id="adm-stat-guarantee" value="5"></div></div></div><button class="save-btn" onclick="saveAll('stats')">Зберегти</button><span class="save-msg" id="msg-stats">✓</span></div>
+<!-- ================= ПРО НАС ================= -->
+<section class="wrap">
+  <p class="eyebrow">Про компанію</p>
+  <h2 class="h2">ЧОМУ САМЕ МИ</h2>
+  <div class="about">
+    <div>
+      <p>GlassGuard — команда майстрів з поклейки віконних плівок у Києві та Київській області. За час роботи ми виконали понад 3000 об'єктів: квартири, приватні будинки, офіси, магазини, заклади харчування та державні установи.</p>
+      <p>Близько 95% усіх наших робіт — це саме бронеплівка. Ми не «робимо все потроху»: захисні плівки — наша основна спеціалізація, і саме на них у нас напрацьована технологія й швидкість.</p>
+      <p>Кожен монтаж виконуємо зі зняттям штапиків. Це довше, ніж поклейка «в світлий отвір», але тільки так плівка закриває все скло по краях і працює так, як має працювати.</p>
+    </div>
+    <div class="about-boxes">
+      <div class="about-box">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M12 3l7 3v6c0 4.4-3 7.9-7 9-4-1.1-7-4.6-7-9V6z"/></svg>
+        <b>Спеціалізація</b><span>95% робіт — захисна бронеплівка</span>
+      </div>
+      <div class="about-box">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M13 2 4 14h7l-1 8 9-12h-7z"/></svg>
+        <b>Швидко</b><span>Типовий об'єкт — один день роботи</span>
+      </div>
+      <div class="about-box">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M3 7h18v12a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><path d="M8 7V5a2 2 0 0 1 2-2h4a2 2 0 0 1 2 2v2"/></svg>
+        <b>Досвід</b><span>Понад 3000 виконаних об'єктів</span>
+      </div>
+      <div class="about-box">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg>
+        <b>Виїзд</b><span>Заміри по Києву — безкоштовно</span>
+      </div>
+    </div>
+  </div>
+</section>
 
-  <div class="admin-panel" id="panel-company"><div class="admin-card"><h3>Компанія</h3><div class="admin-row"><div class="admin-field"><label>Назва</label><input id="adm-company-name" value="GlassGuard"></div><div class="admin-field"><label>Телефон</label><input id="adm-company-phone" value="+380 (XX) XXX-XX-XX"></div></div><div class="admin-row"><div class="admin-field"><label>Email</label><input id="adm-company-email" value="info@glassguard.com.ua"></div><div class="admin-field"><label>Місто</label><input id="adm-company-city" value="Київ"></div></div><div class="admin-row"><div class="admin-field full"><label>Адреса</label><input id="adm-company-address" value="Київ, Україна"></div></div><div class="admin-row"><div class="admin-field"><label>Viber</label><input id="adm-company-viber" value="+380XXXXXXXXX"></div><div class="admin-field"><label>Telegram</label><input id="adm-company-telegram" value="@glassguard_ua"></div></div><div class="admin-row"><div class="admin-field full"><label>Футер</label><input id="adm-footer-text" value="© 2026 GlassGuard — Професійна поклейка плівок на вікна. Київ, Україна."></div></div></div><button class="save-btn" onclick="saveAll('company')">Зберегти</button><span class="save-msg" id="msg-company">✓</span></div>
+<!-- ================= ВІДГУКИ =================
+     УВАГА: тут стоять ЗАГЛУШКИ. Вигаданих відгуків на сайті бути не повинно —
+     це заборонено законом і вбиває довіру. Надішліть 3 справжні відгуки
+     (можна скріншотами переписки) — я підставлю сюди їх.
+     Поки відгуків немає, цю секцію краще просто видалити перед запуском.
+-->
+<section class="wrap" id="vidguky">
+  <p class="eyebrow">Відгуки</p>
+  <h2 class="h2">ЩО КАЖУТЬ КЛІЄНТИ</h2>
+  <div class="reviews">
+    <div class="review placeholder">
+      <span class="placeholder-tag">Заглушка — вставити справжній</span>
+      <div class="review-stars" aria-hidden="true">★★★★★</div>
+      <p class="review-text">Тут буде реальний відгук клієнта. Що замовляли, як пройшов монтаж, чим залишились задоволені.</p>
+      <div class="review-who"><span class="review-ava" aria-hidden="true">?</span><div><b>Ім'я клієнта</b><span>Послуга · Тип об'єкта, місто</span></div></div>
+    </div>
+    <div class="review placeholder">
+      <span class="placeholder-tag">Заглушка — вставити справжній</span>
+      <div class="review-stars" aria-hidden="true">★★★★★</div>
+      <p class="review-text">Тут буде реальний відгук клієнта. Що замовляли, як пройшов монтаж, чим залишились задоволені.</p>
+      <div class="review-who"><span class="review-ava" aria-hidden="true">?</span><div><b>Ім'я клієнта</b><span>Послуга · Тип об'єкта, місто</span></div></div>
+    </div>
+    <div class="review placeholder">
+      <span class="placeholder-tag">Заглушка — вставити справжній</span>
+      <div class="review-stars" aria-hidden="true">★★★★★</div>
+      <p class="review-text">Тут буде реальний відгук клієнта. Що замовляли, як пройшов монтаж, чим залишились задоволені.</p>
+      <div class="review-who"><span class="review-ava" aria-hidden="true">?</span><div><b>Ім'я клієнта</b><span>Послуга · Тип об'єкта, місто</span></div></div>
+    </div>
+  </div>
+</section>
 
-  <div class="admin-panel" id="panel-requests"><div class="admin-card"><h3>Заявки</h3><table class="requests-table"><thead><tr><th>Дата</th><th>Ім'я</th><th>Телефон</th><th>Послуга</th><th>Тип</th><th>Статус</th></tr></thead><tbody id="requests-body"><tr><td>29.03.2026</td><td>Олександр К.</td><td>+380 67 123 4567</td><td>Бронеплівка</td><td>Квартира</td><td><span class="status-badge status-new">Новий</span></td></tr><tr><td>28.03.2026</td><td>Марія П.</td><td>+380 50 987 6543</td><td>Тонування</td><td>Офіс</td><td><span class="status-badge status-pending">В роботі</span></td></tr><tr><td>27.03.2026</td><td>Ігор В.</td><td>+380 93 456 7890</td><td>Декоративна</td><td>Ресторан</td><td><span class="status-badge status-done">Виконано</span></td></tr><tr><td>26.03.2026</td><td>Наталія С.</td><td>+380 68 321 0987</td><td>Бронеплівка</td><td>Будинок</td><td><span class="status-badge status-done">Виконано</span></td></tr></tbody></table></div></div>
-</div></div>
+<!-- ================= FAQ ================= -->
+<section class="wrap">
+  <p class="eyebrow">Питання</p>
+  <h2 class="h2">ЧАСТІ ЗАПИТАННЯ</h2>
+  <div class="faq">
+    <details>
+      <summary>Скільки часу тримається плівка на вікнах?</summary>
+      <div class="faq-a"><p>Якісна плівка служить від 10 років і довше. На матеріал і роботу ми даємо власну гарантію — конкретний строк уточнюйте при замовленні.</p></div>
+    </details>
+    <details>
+      <summary>Чи можна зняти плівку без пошкодження скла?</summary>
+      <div class="faq-a"><p>Так. Плівка знімається без пошкоджень склопакета. Ми також виконуємо демонтаж старої плівки перед поклейкою нової.</p></div>
+    </details>
+    <details>
+      <summary>Що таке «монтаж зі зняттям штапиків» і навіщо це?</summary>
+      <div class="faq-a"><p>Штапик — це планка, що утримує склопакет у рамі. Якщо її не знімати, плівку можна наклеїти лише на видиму частину скла, і по периметру залишається незахищена смуга. Зі зняттям штапиків плівка заходить під раму й закриває все полотно — саме тоді бронеплівка справді утримує скло.</p></div>
+    </details>
+    <details>
+      <summary>Яка різниця між тонувальною та бронеплівкою?</summary>
+      <div class="faq-a"><p>Тонувальна працює зі світлом і теплом: менше сонця, менше перегріву, приватність удень. Бронеплівка — це міцність: вона утримує скло від розльоту при ударі чи вибуховій хвилі. Їх можна комбінувати, є плівки з обома властивостями одразу.</p></div>
+    </details>
+    <details>
+      <summary>Скільки коштує виїзд на заміри?</summary>
+      <div class="faq-a"><p>По Києву виїзд на заміри безкоштовний. За межі міста — розраховується окремо або враховується у вартість замовлення.</p></div>
+    </details>
+    <details>
+      <summary>Чи працюєте ви за межами Києва?</summary>
+      <div class="faq-a"><p>Так, по всій Київській області. Для великих об'єктів виїжджаємо й далі — обговорюється індивідуально.</p></div>
+    </details>
+  </div>
+</section>
 
-<div class="float-btn"><div class="float-options" id="floatOptions"><a class="float-opt" href="tel:+380000000000"><span class="float-opt-label">Зателефонувати</span><div class="float-opt-icon phone">📞</div></a><a class="float-opt" href="https://t.me/glassguard_ua" target="_blank"><span class="float-opt-label">Telegram</span><div class="float-opt-icon telegram">✈</div></a><a class="float-opt" href="viber://chat?number=+380000000000"><span class="float-opt-label">Viber</span><div class="float-opt-icon viber">☎</div></a></div><button class="float-main" id="floatMain" onclick="toggleFloat()">💬</button></div>
-<div class="toast" id="toast"></div>
+<!-- ================= ФОРМА ЗАЯВКИ ================= -->
+<section class="wrap" id="zayavka">
+  <div class="form-card">
+    <h2>ЗАЛИШИТИ ЗАЯВКУ</h2>
+    <p>Заповніть форму — передзвонимо протягом 30 хвилин у робочий час і домовимось про заміри.</p>
 
-<script>
-function toggleMobile(){const b=document.getElementById('burger'),m=document.getElementById('mobileMenu');b.classList.toggle('open');m.classList.toggle('open');document.body.style.overflow=m.classList.contains('open')?'hidden':'';}
-function mobileNav(p){toggleMobile();navigate(p);}
-function toggleFloat(){document.getElementById('floatMain').classList.toggle('open');document.getElementById('floatOptions').classList.toggle('open');}
-function toggleFaq(el){el.classList.toggle('open');}
-function navigate(page){document.querySelectorAll('.page').forEach(p=>p.classList.remove('active'));document.getElementById('page-'+page).classList.add('active');document.querySelectorAll('.nav-links a').forEach(a=>a.classList.remove('active'));const n=document.getElementById('nav-'+page);if(n)n.classList.add('active');window.scrollTo({top:0,behavior:'smooth'});applyData();}
-function applyData(){
-  const el=id=>document.getElementById(id);
-  ['tint','armor','decor'].forEach(c=>{
-    const pairs=[['home-'+c+'-title','adm-'+c+'-home-title'],['home-'+c+'-desc','adm-'+c+'-home-desc'],['cat-'+c+'-title','adm-'+c+'-cat-title'],['cat-'+c+'-desc','adm-'+c+'-desc'],['cat-'+c+'-price','adm-'+c+'-price'],['cat-'+c+'-price-note','adm-'+c+'-price-note']];
-    pairs.forEach(([t,s])=>{if(el(t)&&el(s))el(t).textContent=el(s).value;});
-    const bf=el('adm-'+c+'-benefits');if(bf&&el('cat-'+c+'-benefits'))el('cat-'+c+'-benefits').innerHTML=bf.value.split('\n').filter(b=>b.trim()).map(b=>'<li>'+b+'</li>').join('');
-  });
-  for(let i=1;i<=4;i++){const t=el('adm-step'+i+'-title'),x=el('adm-step'+i+'-text');if(t&&el('step'+i+'-title'))el('step'+i+'-title').textContent=t.value;if(x&&el('step'+i+'-text'))el('step'+i+'-text').textContent=x.value;}
-  const a1=el('adm-about1'),a2=el('adm-about2');if(a1&&el('about-text-1'))el('about-text-1').textContent=a1.value;if(a2&&el('about-text-2'))el('about-text-2').textContent=a2.value;
-  for(let i=1;i<=3;i++){['name','meta','text'].forEach(f=>{const s=el('adm-rev'+i+'-'+f),t=el('review'+i+'-'+f);if(s&&t)t.textContent=s.value;});}
-  for(let i=1;i<=5;i++){['q','a'].forEach(f=>{const s=el('adm-faq'+i+'-'+f),t=el('faq'+i+'-'+f);if(s&&t)t.textContent=s.value;});}
-  ['years','orders','clients','guarantee'].forEach(k=>{const s=el('adm-stat-'+k),t=el('stat-'+k);if(s&&t)t.textContent=s.value;});
-  const cp=el('adm-company-phone'),ce=el('adm-company-email'),ca=el('adm-company-address'),ft=el('adm-footer-text');
-  if(cp&&el('contact-phone-link'))el('contact-phone-link').textContent=cp.value;
-  if(ce&&el('contact-email-link'))el('contact-email-link').textContent=ce.value;
-  if(ca&&el('contact-address-text'))el('contact-address-text').textContent=ca.value;
-  if(ft)document.querySelectorAll('.footer-text').forEach(f=>f.textContent=ft.value);
-}
-function switchTab(btn,tab){document.querySelectorAll('.admin-tab').forEach(t=>t.classList.remove('active'));document.querySelectorAll('.admin-panel').forEach(p=>p.classList.remove('active'));btn.classList.add('active');document.getElementById('panel-'+tab).classList.add('active');}
-function saveAll(s){applyData();const m=document.getElementById('msg-'+s);if(m){m.classList.add('show');setTimeout(()=>m.classList.remove('show'),2000);}showToast('Зміни збережено!');}
-function submitForm(cat){const p=document.getElementById('page-'+cat),n=p.querySelector('.contact-name').value,ph=p.querySelector('.contact-phone').value,tp=p.querySelector('.contact-type').value;if(!n||!ph){showToast("Вкажіть ім'я та телефон");return;}const cats={tint:'Тонування',armor:'Бронеплівка',decor:'Декоративна'},d=new Date().toLocaleDateString('uk-UA'),r=document.createElement('tr');r.innerHTML='<td>'+d+'</td><td>'+n+'</td><td>'+ph+'</td><td>'+cats[cat]+'</td><td>'+tp+'</td><td><span class="status-badge status-new">Новий</span></td>';document.getElementById('requests-body').prepend(r);p.querySelector('.contact-name').value='';p.querySelector('.contact-phone').value='';p.querySelector('.contact-area').value='';p.querySelector('.contact-msg').value='';showToast("Заявку надіслано!");}
-function showToast(m){const t=document.getElementById('toast');t.textContent=m;t.classList.add('show');setTimeout(()=>t.classList.remove('show'),3000);}
-window.addEventListener('scroll',()=>{document.getElementById('mainNav').classList.toggle('scrolled',window.scrollY>50);});
-applyData();
-</script>
+    <form class="lead-form" novalidate>
+      <input type="hidden" name="сторінка" value="Головна">
+      <input class="hp" type="text" name="_gotcha" tabindex="-1" autocomplete="off" aria-hidden="true">
+
+      <div class="form-row">
+        <div class="field">
+          <label for="f-name">Ім'я *</label>
+          <input id="f-name" name="ім_я" type="text" autocomplete="name" placeholder="Як до вас звертатись" required>
+        </div>
+        <div class="field">
+          <label for="f-phone">Телефон *</label>
+          <input id="f-phone" name="телефон" type="tel" autocomplete="tel" placeholder="+380 __ ___ __ __" required>
+        </div>
+      </div>
+
+      <div class="form-row">
+        <div class="field">
+          <label for="f-service">Послуга</label>
+          <select id="f-service" name="послуга">
+            <option>Бронеплівка</option>
+            <option>Тонування</option>
+            <option>Декоративна плівка</option>
+            <option>Ще не визначився</option>
+          </select>
+        </div>
+        <div class="field">
+          <label for="f-object">Тип об'єкта</label>
+          <select id="f-object" name="об_єкт">
+            <option>Квартира</option>
+            <option>Приватний будинок</option>
+            <option>Офіс</option>
+            <option>Магазин / вітрина</option>
+            <option>Інше</option>
+          </select>
+        </div>
+      </div>
+
+      <div class="form-row">
+        <div class="field full">
+          <label for="f-msg">Коментар</label>
+          <textarea id="f-msg" name="коментар" placeholder="Скільки вікон, приблизна площа, побажання, зручний час дзвінка…"></textarea>
+        </div>
+      </div>
+
+      <label class="consent">
+        <input type="checkbox" name="згода" required>
+        <span>Я даю згоду на обробку моїх персональних даних для опрацювання заявки та ознайомлений(а) з <a href="polityka.html">політикою конфіденційності</a>.</span>
+      </label>
+
+      <button class="btn btn-primary" type="submit">Надіслати заявку</button>
+    </form>
+  </div>
+</section>
+
+<!-- ================= КОНТАКТИ ================= -->
+<section class="contacts" id="kontakty">
+  <div class="wrap">
+    <p class="eyebrow">Контакти</p>
+    <h2 class="h2">ЗВ'ЯЖІТЬСЯ З НАМИ</h2>
+    <div class="contacts-grid">
+      <div class="contact">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1 1 .4 1.9.7 2.8a2 2 0 0 1-.5 2.1L8.1 9.9a16 16 0 0 0 6 6l1.3-1.2a2 2 0 0 1 2.1-.5c.9.3 1.8.6 2.8.7a2 2 0 0 1 1.7 2z"/></svg>
+        <span>Телефон</span><b><a href="tel:+380000000000">+380 00 000 00 00</a></b>
+      </div>
+      <div class="contact">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m2 7 10 6 10-6"/></svg>
+        <span>Email</span><b><a href="mailto:info@glassguard.com.ua">info@glassguard.com.ua</a></b>
+      </div>
+      <div class="contact">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0z"/><circle cx="12" cy="10" r="3"/></svg>
+        <span>Зона роботи</span><b>Київ та Київська область</b>
+      </div>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<!-- ================= ПІДВАЛ ================= -->
+<footer>
+  <div class="footer-logo">GLASSGUARD</div>
+  <nav class="footer-nav" aria-label="Підвал">
+    <a href="index.html">Головна</a>
+    <a href="broneplivka.html">Бронеплівка</a>
+    <a href="tonuvannya.html">Тонування</a>
+    <a href="dekoratyvna.html">Декоративна</a>
+    <a href="polityka.html">Політика конфіденційності</a>
+  </nav>
+  <p class="footer-text">© 2026 GlassGuard — поклейка захисних плівок на вікна. Київ та Київська область.</p>
+</footer>
+
+<!-- ================= ПЛАВАЮЧІ КНОПКИ ================= -->
+<div class="float">
+  <div class="float-opts" id="floatOpts">
+    <a class="float-opt" href="tel:+380000000000"><em>Зателефонувати</em>
+      <span class="float-ico ico-tel"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1 1 .4 1.9.7 2.8a2 2 0 0 1-.5 2.1L8.1 9.9a16 16 0 0 0 6 6l1.3-1.2a2 2 0 0 1 2.1-.5c.9.3 1.8.6 2.8.7a2 2 0 0 1 1.7 2z"/></svg></span>
+    </a>
+    <a class="float-opt" href="https://t.me/glassguard_ua" target="_blank" rel="noopener"><em>Telegram</em>
+      <span class="float-ico ico-tg"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M21.9 4.3 18.9 19c-.2 1-.8 1.2-1.7.8l-4.6-3.4-2.2 2.1c-.3.3-.5.5-1 .5l.3-4.7 8.5-7.7c.4-.3-.1-.5-.6-.2L7.1 13 2.6 11.6c-1-.3-1-1 .2-1.5l18-6.9c.8-.3 1.5.2 1.1 1.1z"/></svg></span>
+    </a>
+    <a class="float-opt" href="viber://chat?number=%2B380000000000"><em>Viber</em>
+      <span class="float-ico ico-vb"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C6.9 2 3 5.3 3 9.8c0 2.4 1.2 4.5 3.1 5.9v3.6l3.2-1.8c.9.2 1.8.3 2.7.3 5.1 0 9-3.3 9-7.9S17.1 2 12 2z"/></svg></span>
+    </a>
+  </div>
+  <button class="float-main" id="floatMain" aria-expanded="false" aria-controls="floatOpts" aria-label="Способи зв'язку">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg>
+  </button>
+</div>
+
+<script src="assets/site.js"></script>
 </body>
 </html>
