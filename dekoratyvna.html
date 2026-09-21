@@ -53,7 +53,7 @@
     <a href="broneplivka.html">Бронеплівка</a>
     <a href="tonuvannya.html">Тонування</a>
     <a href="dekoratyvna.html" aria-current="page">Декоративна</a>
-    <a href="#kontakty">Контакти</a>
+    <a href="#roboty">Роботи</a>
     <a class="nav-phone" href="tel:+380000000000">+380 00 000 00 00</a>
   </div>
 
@@ -71,7 +71,7 @@
   <a href="broneplivka.html">Бронеплівка</a>
   <a href="tonuvannya.html">Тонування</a>
   <a href="dekoratyvna.html">Декоративна</a>
-  <a href="#kontakty">Контакти</a>
+  <a href="#roboty">Роботи</a>
   <a class="mm-phone" href="tel:+380000000000">+380 00 000 00 00</a>
 </div>
 
@@ -88,7 +88,7 @@
 
   <div class="card">
     <h2>ВАРТІСТЬ</h2>
-    <div class="price" style="color:var(--decor)">від ••• грн</div>
+    <div class="price">від ••• грн</div>
     <p class="price-unit">за м² — матеріал разом із монтажем</p>
     <p style="margin-top:16px"><span class="placeholder-tag">Заглушка — підставити реальну ціну</span></p>
     <p>Ціна залежить від типу плівки та складності малюнка. Плівки з індивідуальним друком рахуються окремо.</p>
@@ -119,41 +119,60 @@
 
 </div>
 
+<!-- ================= ГАЛЕРЕЯ =================
+     ЯК ЗАМІНИТИ ФОТО: покладіть файл у папку assets/foto/ і змініть src=""
+     та текст в alt і <figcaption>. Alt читає Google — пишіть по суті.
+-->
+<section class="wrap" id="roboty">
+  <p class="eyebrow">Портфоліо</p>
+  <h2 class="h2">ОБ’ЄКТИ З ДЕКОРАТИВНОЮ ПЛІВКОЮ</h2>
+  <p class="lead">Перегородки, санвузли та вітрини, де скло стало елементом інтер’єру.</p>
+  <div class="gallery">
+    <figure class="gal-item"><img src="assets/foto/07.svg" alt="Декоративна плівка · перегородка офісу" loading="lazy" width="800" height="600"><figcaption class="gal-cap">Декоративна плівка · перегородка офісу</figcaption></figure>
+    <figure class="gal-item"><img src="assets/foto/09.svg" alt="Декоративна плівка · санвузол" loading="lazy" width="800" height="600"><figcaption class="gal-cap">Декоративна плівка · санвузол</figcaption></figure>
+    <figure class="gal-item"><img src="assets/foto/05.svg" alt="Матова плівка на вітрині" loading="lazy" width="800" height="600"><figcaption class="gal-cap">Матова плівка на вітрині</figcaption></figure>
+    <figure class="gal-item"><img src="assets/foto/03.svg" alt="Процес поклейки декоративної плівки" loading="lazy" width="800" height="600"><figcaption class="gal-cap">Процес поклейки декоративної плівки</figcaption></figure>
+    <figure class="gal-item"><img src="assets/foto/04.svg" alt="Переговорна кімната, матове скло" loading="lazy" width="800" height="600"><figcaption class="gal-cap">Переговорна кімната, матове скло</figcaption></figure>
+    <figure class="gal-item"><img src="assets/foto/06.svg" alt="Плівка з візерунком на склі" loading="lazy" width="800" height="600"><figcaption class="gal-cap">Плівка з візерунком на склі</figcaption></figure>
+  </div>
+  <p class="gal-note"><span class="placeholder-tag">Заглушки — замінити на справжні фото об'єктів</span></p>
+</section>
+
 <section class="wrap" id="zayavka">
   <div class="form-card">
     <h2>РОЗРАХУВАТИ ВАРТІСТЬ</h2>
     <p>Залиште контакти — передзвонимо протягом 30 хвилин, уточнимо деталі та домовимось про безкоштовні заміри.</p>
-    <form class="lead-form" novalidate>
-      <input type="hidden" name="сторінка" value="ДЕКОРАТИВНА ПЛІВКА">
-      <input class="hp" type="text" name="_gotcha" tabindex="-1" autocomplete="off" aria-hidden="true">
+    <form class="lead-form" data-page="Декоративна плівка" novalidate>
+      <input type="checkbox" name="botcheck" class="hp" tabindex="-1" autocomplete="off" aria-hidden="true">
+      <input type="hidden" name="service" value="Декоративна плівка">
       <div class="form-row">
         <div class="field">
           <label for="f-name">Ім'я *</label>
-          <input id="f-name" name="ім_я" type="text" autocomplete="name" placeholder="Як до вас звертатись" required>
+          <input id="f-name" name="name" type="text" autocomplete="name" placeholder="Як до вас звертатись" required>
         </div>
         <div class="field">
           <label for="f-phone">Телефон *</label>
-          <input id="f-phone" name="телефон" type="tel" autocomplete="tel" placeholder="+380 __ ___ __ __" required>
+          <input id="f-phone" name="phone" type="tel" autocomplete="tel" placeholder="+380 __ ___ __ __" required>
         </div>
       </div>
       <div class="form-row">
         <div class="field">
           <label for="f-object">Тип об'єкта</label>
-          <select id="f-object" name="об_єкт"><option>Квартира</option><option>Офіс</option><option>Магазин / вітрина</option><option>Ресторан / кафе</option><option>Салон</option><option>Інше</option></select>
+          <select id="f-object" name="object"><option>Квартира</option><option>Офіс</option><option>Магазин / вітрина</option><option>Ресторан / кафе</option><option>Салон</option><option>Інше</option></select>
         </div>
         <div class="field">
           <label for="f-area">Площа скління, м²</label>
-          <input id="f-area" name="обсяг" type="text" placeholder="напр. 8">
+          <input id="f-area" name="volume" type="text" placeholder="напр. 8">
         </div>
       </div>
       <div class="form-row">
         <div class="field full">
           <label for="f-msg">Коментар</label>
-          <textarea id="f-msg" name="коментар" placeholder="Побажання, зручний час дзвінка…"></textarea>
+          <textarea id="f-msg" name="comment" placeholder="Побажання, зручний час дзвінка…"></textarea>
         </div>
       </div>
       <label class="consent">
-        <input type="checkbox" name="згода" required>
+        <input type="checkbox" name="consent" required>
         <span>Я даю згоду на обробку моїх персональних даних для опрацювання заявки та ознайомлений(а) з <a href="polityka.html">політикою конфіденційності</a>.</span>
       </label>
       <button class="btn btn-primary" type="submit">Надіслати заявку</button>

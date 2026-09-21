@@ -1,16 +1,11 @@
 /* ============================================================
    GLASSGUARD — спільний скрипт для всіх сторінок
-   ============================================================
 
-   ↓↓↓ ЄДИНЕ МІСЦЕ, ДЕ ТРЕБА ЩОСЬ МІНЯТИ ↓↓↓
-   Щоб форма почала надсилати заявки:
-   1. Зайдіть на https://web3forms.com
-   2. Введіть свою пошту → отримаєте Access Key (довгий рядок)
-   3. Вставте його нижче замість слова ЗАМІНІТЬ_МЕНЕ
-   Все. Заявки почнуть приходити на цю пошту.
+   ⚠️ УВАГА: цей файл оновлено. Вставте свій ключ у рядок нижче
+   ще раз (той самий, що вже працював).
    ============================================================ */
 
-const FORM_ACCESS_KEY = "89124f4d-d4c9-4083-8bc5-53c192405693";
+const FORM_ACCESS_KEY = "ЗАМІНІТЬ_МЕНЕ";
 
 /* ------------------------------------------------------------
    Далі — робочий код. Змінювати не треба.
@@ -27,9 +22,7 @@ const FORM_ACCESS_KEY = "89124f4d-d4c9-4083-8bc5-53c192405693";
     menu.classList.toggle('open', open);
     document.body.style.overflow = open ? 'hidden' : '';
   }
-  burger.addEventListener('click', () => {
-    setOpen(burger.getAttribute('aria-expanded') !== 'true');
-  });
+  burger.addEventListener('click', () => setOpen(burger.getAttribute('aria-expanded') !== 'true'));
   menu.querySelectorAll('a').forEach(a => a.addEventListener('click', () => setOpen(false)));
   document.addEventListener('keydown', e => { if (e.key === 'Escape') setOpen(false); });
 })();
@@ -72,51 +65,69 @@ function showToast(text, isError) {
   t._timer = setTimeout(() => t.classList.remove('show'), 4500);
 }
 
-/* --- надсилання заявки --- */
+/* --- надсилання заявки ---
+   Лист формується вручну одним читабельним блоком українською.
+   Раніше назви полів були кирилицею і пошта показувала їх кракозябрами —
+   тепер назви латиницею, а весь український текст іде в полі message.
+*/
 (function () {
   const forms = document.querySelectorAll('form.lead-form');
   if (!forms.length) return;
+
+  const val = (f, n) => (f.querySelector(`[name="${n}"]`)?.value || '').trim();
 
   forms.forEach(form => {
     form.addEventListener('submit', async e => {
       e.preventDefault();
 
       // пастка для спам-ботів: люди це поле не бачать і не заповнюють
-      if (form.querySelector('[name="_gotcha"]')?.value) return;
+      if (form.querySelector('[name="botcheck"]')?.checked) return;
 
       const btn = form.querySelector('button[type="submit"]');
-      const name = form.querySelector('[name="ім_я"]')?.value.trim();
-      const phone = form.querySelector('[name="телефон"]')?.value.trim();
+      const name = val(form, 'name');
+      const phone = val(form, 'phone');
 
-      if (!name || !phone) {
-        showToast("Вкажіть, будь ласка, ім'я та телефон", true);
-        return;
-      }
-      if (phone.replace(/\D/g, '').length < 9) {
-        showToast('Схоже, номер телефону неповний', true);
-        return;
-      }
-      if (!form.querySelector('[name="згода"]')?.checked) {
-        showToast('Потрібна згода на обробку даних', true);
-        return;
-      }
+      if (!name || !phone) { showToast("Вкажіть, будь ласка, ім'я та телефон", true); return; }
+      if (phone.replace(/\D/g, '').length < 9) { showToast('Схоже, номер телефону неповний', true); return; }
+      if (!form.querySelector('[name="consent"]')?.checked) { showToast('Потрібна згода на обробку даних', true); return; }
 
-      // ключ ще не підставлений — не даємо втратити заявку мовчки
       if (FORM_ACCESS_KEY === 'ЗАМІНІТЬ_МЕНЕ') {
         showToast('Форма ще не підключена. Зателефонуйте нам або напишіть у Telegram.', true);
         return;
       }
 
-      const data = new FormData(form);
-      data.append('access_key', FORM_ACCESS_KEY);
-      data.append('subject', 'Нова заявка з сайту GlassGuard');
-      data.append('from_name', 'Сайт GlassGuard');
+      // збираємо читабельний текст листа
+      const rows = [
+        ["Ім'я", name],
+        ['Телефон', phone],
+        ['Послуга', val(form, 'service')],
+        ['Тип об’єкта', val(form, 'object')],
+        ['Обсяг', val(form, 'volume')],
+        ['Коментар', val(form, 'comment')],
+        ['Сторінка', form.dataset.page || document.title],
+        ['Час', new Date().toLocaleString('uk-UA')]
+      ].filter(r => r[1]);
+
+      const message = rows.map(r => `${r[0]}: ${r[1]}`).join('\n');
+
+      const payload = {
+        access_key: FORM_ACCESS_KEY,
+        subject: `Заявка з сайту: ${name}, ${phone}`,
+        from_name: 'Сайт GlassGuard',
+        name: name,
+        phone: phone,
+        message: message
+      };
 
       const label = btn ? btn.textContent : '';
       if (btn) { btn.disabled = true; btn.textContent = 'Надсилаємо…'; }
 
       try {
-        const res = await fetch('https://api.web3forms.com/submit', { method: 'POST', body: data });
+        const res = await fetch('https://api.web3forms.com/submit', {
+          method: 'POST',
+          headers: { 'Content-Type': 'application/json; charset=utf-8', 'Accept': 'application/json' },
+          body: JSON.stringify(payload)
+        });
         const json = await res.json();
         if (json.success) {
           form.reset();

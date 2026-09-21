@@ -67,7 +67,7 @@
     <a href="broneplivka.html">Бронеплівка</a>
     <a href="tonuvannya.html">Тонування</a>
     <a href="dekoratyvna.html">Декоративна</a>
-    <a href="#kontakty">Контакти</a>
+    <a href="#roboty">Роботи</a>
     <a class="nav-phone" href="tel:+380000000000">+380 00 000 00 00</a>
   </div>
 
@@ -85,7 +85,7 @@
   <a href="broneplivka.html">Бронеплівка</a>
   <a href="tonuvannya.html">Тонування</a>
   <a href="dekoratyvna.html">Декоративна</a>
-  <a href="#kontakty">Контакти</a>
+  <a href="#roboty">Роботи</a>
   <a class="mm-phone" href="tel:+380000000000">+380 00 000 00 00</a>
 </div>
 
@@ -103,10 +103,16 @@
   <p class="hero-note">Відповідаємо протягом 30 хвилин у робочий час</p>
 </section>
 
-<!-- ================= ЛІЧИЛЬНИКИ ================= -->
+<!-- ================= ЛІЧИЛЬНИКИ =================
+     Замість відгуків тут працюють цифри. Заміняйте значення в <b>…</b>.
+     Заглушки позначені класом placeholder (жовта пунктирна рамка) —
+     після підстановки реального значення просто приберіть слово placeholder.
+-->
 <section class="stats" aria-label="Показники роботи">
   <div class="stat"><b>3000+</b><span>Виконаних об'єктів</span></div>
   <div class="stat"><b>95%</b><span>Робіт — бронеплівка</span></div>
+  <div class="stat placeholder"><b>••• тис. м²</b><span>Поклеєно плівки</span></div>
+  <div class="stat placeholder"><b>•••+</b><span>Об'єктів за останній рік</span></div>
   <div class="stat placeholder"><b>20••</b><span>Рік початку роботи</span></div>
   <div class="stat placeholder"><b>••</b><span>Років гарантії</span></div>
 </section>
@@ -168,23 +174,26 @@
   </div>
 </section>
 
-<!-- ================= НАШІ РОБОТИ ================= -->
+<!-- ================= ГАЛЕРЕЯ =================
+     ЯК ЗАМІНИТИ ФОТО: покладіть свій файл у папку assets/foto/
+     і змініть у рядку нижче src="assets/foto/01.svg" на src="assets/foto/ваш-файл.jpg".
+     Текст в alt та в <span class="gal-cap"> теж замініть — його читає Google.
+-->
 <section class="wrap" id="roboty">
   <p class="eyebrow">Портфоліо</p>
   <h2 class="h2">НАШІ РОБОТИ</h2>
   <p class="lead">Реальні об'єкти, а не стокові картинки.</p>
 
-  <!-- ЯК ДОДАТИ ФОТО: замініть блок <div class="gal-item gal-empty">…</div>
-       на <div class="gal-item"><img src="assets/foto/1.jpg" alt="Бронеплівка, квартира, Київ"></div>
-       Файли покладіть у папку assets/foto/ -->
   <div class="gallery">
-    <div class="gal-item gal-empty"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="3" y="5" width="18" height="14" rx="2"/><circle cx="8.5" cy="10.5" r="1.5"/><path d="m21 15-5-5L5 19"/></svg>Фото об'єкта</div>
-    <div class="gal-item gal-empty"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="3" y="5" width="18" height="14" rx="2"/><circle cx="8.5" cy="10.5" r="1.5"/><path d="m21 15-5-5L5 19"/></svg>Фото об'єкта</div>
-    <div class="gal-item gal-empty"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="3" y="5" width="18" height="14" rx="2"/><circle cx="8.5" cy="10.5" r="1.5"/><path d="m21 15-5-5L5 19"/></svg>Фото об'єкта</div>
-    <div class="gal-item gal-empty"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="3" y="5" width="18" height="14" rx="2"/><circle cx="8.5" cy="10.5" r="1.5"/><path d="m21 15-5-5L5 19"/></svg>Процес монтажу</div>
-    <div class="gal-item gal-empty"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="3" y="5" width="18" height="14" rx="2"/><circle cx="8.5" cy="10.5" r="1.5"/><path d="m21 15-5-5L5 19"/></svg>До / після</div>
-    <div class="gal-item gal-empty"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="3" y="5" width="18" height="14" rx="2"/><circle cx="8.5" cy="10.5" r="1.5"/><path d="m21 15-5-5L5 19"/></svg>Об'єкт бізнесу</div>
+    <figure class="gal-item"><img src="assets/foto/01.svg" alt="Бронеплівка на вікна квартири, Київ" loading="lazy" width="800" height="600"><figcaption class="gal-cap">Бронеплівка · квартира, Київ</figcaption></figure>
+    <figure class="gal-item"><img src="assets/foto/02.svg" alt="Бронеплівка на вікна приватного будинку" loading="lazy" width="800" height="600"><figcaption class="gal-cap">Бронеплівка · приватний будинок</figcaption></figure>
+    <figure class="gal-item"><img src="assets/foto/03.svg" alt="Процес монтажу плівки зі зняттям штапиків" loading="lazy" width="800" height="600"><figcaption class="gal-cap">Процес монтажу зі зняттям штапиків</figcaption></figure>
+    <figure class="gal-item"><img src="assets/foto/04.svg" alt="Бронеплівка на вікна офісу в Києві" loading="lazy" width="800" height="600"><figcaption class="gal-cap">Бронеплівка · офіс, Київ</figcaption></figure>
+    <figure class="gal-item"><img src="assets/foto/05.svg" alt="Захисна плівка на вітрину магазину" loading="lazy" width="800" height="600"><figcaption class="gal-cap">Захист вітрини магазину</figcaption></figure>
+    <figure class="gal-item"><img src="assets/foto/06.svg" alt="Тонування панорамного скління" loading="lazy" width="800" height="600"><figcaption class="gal-cap">Тонування · панорамне скління</figcaption></figure>
   </div>
+
+  <p class="gal-note"><span class="placeholder-tag">Заглушки — замінити на справжні фото об'єктів</span></p>
 </section>
 
 <!-- ================= ЯК ПРАЦЮЄМО ================= -->
@@ -230,37 +239,6 @@
   </div>
 </section>
 
-<!-- ================= ВІДГУКИ =================
-     УВАГА: тут стоять ЗАГЛУШКИ. Вигаданих відгуків на сайті бути не повинно —
-     це заборонено законом і вбиває довіру. Надішліть 3 справжні відгуки
-     (можна скріншотами переписки) — я підставлю сюди їх.
-     Поки відгуків немає, цю секцію краще просто видалити перед запуском.
--->
-<section class="wrap" id="vidguky">
-  <p class="eyebrow">Відгуки</p>
-  <h2 class="h2">ЩО КАЖУТЬ КЛІЄНТИ</h2>
-  <div class="reviews">
-    <div class="review placeholder">
-      <span class="placeholder-tag">Заглушка — вставити справжній</span>
-      <div class="review-stars" aria-hidden="true">★★★★★</div>
-      <p class="review-text">Тут буде реальний відгук клієнта. Що замовляли, як пройшов монтаж, чим залишились задоволені.</p>
-      <div class="review-who"><span class="review-ava" aria-hidden="true">?</span><div><b>Ім'я клієнта</b><span>Послуга · Тип об'єкта, місто</span></div></div>
-    </div>
-    <div class="review placeholder">
-      <span class="placeholder-tag">Заглушка — вставити справжній</span>
-      <div class="review-stars" aria-hidden="true">★★★★★</div>
-      <p class="review-text">Тут буде реальний відгук клієнта. Що замовляли, як пройшов монтаж, чим залишились задоволені.</p>
-      <div class="review-who"><span class="review-ava" aria-hidden="true">?</span><div><b>Ім'я клієнта</b><span>Послуга · Тип об'єкта, місто</span></div></div>
-    </div>
-    <div class="review placeholder">
-      <span class="placeholder-tag">Заглушка — вставити справжній</span>
-      <div class="review-stars" aria-hidden="true">★★★★★</div>
-      <p class="review-text">Тут буде реальний відгук клієнта. Що замовляли, як пройшов монтаж, чим залишились задоволені.</p>
-      <div class="review-who"><span class="review-ava" aria-hidden="true">?</span><div><b>Ім'я клієнта</b><span>Послуга · Тип об'єкта, місто</span></div></div>
-    </div>
-  </div>
-</section>
-
 <!-- ================= FAQ ================= -->
 <section class="wrap">
   <p class="eyebrow">Питання</p>
@@ -299,25 +277,24 @@
     <h2>ЗАЛИШИТИ ЗАЯВКУ</h2>
     <p>Заповніть форму — передзвонимо протягом 30 хвилин у робочий час і домовимось про заміри.</p>
 
-    <form class="lead-form" novalidate>
-      <input type="hidden" name="сторінка" value="Головна">
-      <input class="hp" type="text" name="_gotcha" tabindex="-1" autocomplete="off" aria-hidden="true">
+    <form class="lead-form" data-page="Головна" novalidate>
+      <input type="checkbox" name="botcheck" class="hp" tabindex="-1" autocomplete="off" aria-hidden="true">
 
       <div class="form-row">
         <div class="field">
           <label for="f-name">Ім'я *</label>
-          <input id="f-name" name="ім_я" type="text" autocomplete="name" placeholder="Як до вас звертатись" required>
+          <input id="f-name" name="name" type="text" autocomplete="name" placeholder="Як до вас звертатись" required>
         </div>
         <div class="field">
           <label for="f-phone">Телефон *</label>
-          <input id="f-phone" name="телефон" type="tel" autocomplete="tel" placeholder="+380 __ ___ __ __" required>
+          <input id="f-phone" name="phone" type="tel" autocomplete="tel" placeholder="+380 __ ___ __ __" required>
         </div>
       </div>
 
       <div class="form-row">
         <div class="field">
           <label for="f-service">Послуга</label>
-          <select id="f-service" name="послуга">
+          <select id="f-service" name="service">
             <option>Бронеплівка</option>
             <option>Тонування</option>
             <option>Декоративна плівка</option>
@@ -326,7 +303,7 @@
         </div>
         <div class="field">
           <label for="f-object">Тип об'єкта</label>
-          <select id="f-object" name="об_єкт">
+          <select id="f-object" name="object">
             <option>Квартира</option>
             <option>Приватний будинок</option>
             <option>Офіс</option>
@@ -339,12 +316,12 @@
       <div class="form-row">
         <div class="field full">
           <label for="f-msg">Коментар</label>
-          <textarea id="f-msg" name="коментар" placeholder="Скільки вікон, приблизна площа, побажання, зручний час дзвінка…"></textarea>
+          <textarea id="f-msg" name="comment" placeholder="Скільки вікон, приблизна площа, побажання, зручний час дзвінка…"></textarea>
         </div>
       </div>
 
       <label class="consent">
-        <input type="checkbox" name="згода" required>
+        <input type="checkbox" name="consent" required>
         <span>Я даю згоду на обробку моїх персональних даних для опрацювання заявки та ознайомлений(а) з <a href="polityka.html">політикою конфіденційності</a>.</span>
       </label>
 
