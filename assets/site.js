@@ -5,13 +5,13 @@
    ============================================================ */
 
 /* 1. ПОШТА. Ключ із web3forms.com — заявки приходять на пошту. */
-const FORM_ACCESS_KEY = "89124f4d-d4c9-4083-8bc5-53c192405693";
+const FORM_ACCESS_KEY = "33de1a3e-016e-4a5b-908b-aff2166fcaa1";
 
 /* 2. TELEGRAM — спосіб А (рекомендований, токен прихований).
       Адреса вашого Google Apps Script.
       Як отримати — див. файл telegram/ЯК-ПІДКЛЮЧИТИ-TELEGRAM.txt
       Виглядає так: https://script.google.com/macros/s/AKfycb.../exec  */
-const LEAD_WEBHOOK_URL = "https://script.google.com/macros/s/AKfycbxSkVyCqp533gq33XkA9CodTa80xl6H8040efpNDcx1zE7pf3_iAWQmHC9J6ZEnefD80Q/exec";
+const LEAD_WEBHOOK_URL = "https://script.google.com/macros/s/AKfycbw4pYywLVoWLyG2j6cCDRgwtwWSXERTtqyf0gzxlDOMGqZjjWioSv5R6Lgw5Q4i_0lNnQ/exec";
 
 /* 3. TELEGRAM — спосіб Б (швидкий, але токен бота буде видно всім,
       хто відкриє код сторінки). Заповнюйте ТІЛЬКИ якщо не робите спосіб А. */
